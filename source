@@ -2,29 +2,11 @@ local dapatkan_Screepstu_Hub = game.CoreGui:FindFirstChild("ScreepstuHub")
 
 if dapatkan_Screepstu_Hub then
 	dapatkan_Screepstu_Hub:Destroy()
-
-	warn("Misi selesai, Screepstu Hub tidak ditemui dalam Core GUI")
-
-	local aa = Instance.new('Sound', game.ReplicatedFirst)
-	aa.SoundId = "rbxassetid://8470808181"
-	aa.Volume = 1
-	aa:Play()
-
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Hification";
-		Text = "Hello there!";
-		Duration = aa.TimeLength;
-	})
-
-	aa.Ended:Connect(function()
-		aa:Destroy()
-	end)
 end
 
 local Converted = {
 	["_ScreepstuHub"] = Instance.new("ScreenGui");
 	["_MainTop"] = Instance.new("Frame");
-	["_Icon"] = Instance.new("ImageLabel");
 	["_LabelAndTitle"] = Instance.new("TextLabel");
 	["_UIPadding"] = Instance.new("UIPadding");
 	["_LocalScript"] = Instance.new("LocalScript");
@@ -40,215 +22,220 @@ local Converted = {
 	["_VisibleContainer"] = Instance.new("TextButton");
 	["_UITextSizeConstraint3"] = Instance.new("UITextSizeConstraint");
 	["_LocalScript4"] = Instance.new("LocalScript");
+	["_Time"] = Instance.new("TextLabel");
+	["_UIPadding1"] = Instance.new("UIPadding");
+	["_LocalScript5"] = Instance.new("LocalScript");
+	["_Icon"] = Instance.new("ImageButton");
+	["_DoubleClickPrint"] = Instance.new("LocalScript");
 	["_Verti_Line"] = Instance.new("Frame");
 	["_Horiz_Line"] = Instance.new("Frame");
 	["_RestoreUp"] = Instance.new("ImageButton");
 	["_UIStroke"] = Instance.new("UIStroke");
 	["_DropShadowHolder"] = Instance.new("Frame");
 	["_DropShadow"] = Instance.new("ImageLabel");
-	["_LocalScript5"] = Instance.new("LocalScript");
+	["_LocalScript6"] = Instance.new("LocalScript");
 	["_Dragger"] = Instance.new("LocalScript");
 	["_Container2"] = Instance.new("Frame");
 	["_UIGridLayout"] = Instance.new("UIGridLayout");
-	["_UIPadding1"] = Instance.new("UIPadding");
+	["_UIPadding2"] = Instance.new("UIPadding");
 	["_AimbotV3"] = Instance.new("TextButton");
 	["_UIStroke1"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint4"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript6"] = Instance.new("LocalScript");
+	["_LocalScript7"] = Instance.new("LocalScript");
 	["_AntiLag"] = Instance.new("TextButton");
 	["_UIStroke2"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint5"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript7"] = Instance.new("LocalScript");
+	["_LocalScript8"] = Instance.new("LocalScript");
 	["_BetterRoblox"] = Instance.new("TextButton");
 	["_UIStroke3"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint6"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript8"] = Instance.new("LocalScript");
+	["_LocalScript9"] = Instance.new("LocalScript");
 	["_DExplorer"] = Instance.new("TextButton");
 	["_UIStroke4"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint7"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript9"] = Instance.new("LocalScript");
+	["_LocalScript10"] = Instance.new("LocalScript");
 	["_Hydroxide"] = Instance.new("TextButton");
 	["_UIStroke5"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint8"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript10"] = Instance.new("LocalScript");
+	["_LocalScript11"] = Instance.new("LocalScript");
 	["_NexusWeaponry"] = Instance.new("TextButton");
 	["_UIStroke6"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint9"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript11"] = Instance.new("LocalScript");
+	["_LocalScript12"] = Instance.new("LocalScript");
 	["_SecureDex"] = Instance.new("TextButton");
 	["_UIStroke7"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint10"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript12"] = Instance.new("LocalScript");
+	["_LocalScript13"] = Instance.new("LocalScript");
 	["_UnnamedESP"] = Instance.new("TextButton");
 	["_UIStroke8"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint11"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript13"] = Instance.new("LocalScript");
+	["_LocalScript14"] = Instance.new("LocalScript");
 	["_WRDAimbot"] = Instance.new("TextButton");
 	["_UIStroke9"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint12"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript14"] = Instance.new("LocalScript");
+	["_LocalScript15"] = Instance.new("LocalScript");
 	["_WRDESP"] = Instance.new("TextButton");
 	["_UIStroke10"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint13"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript15"] = Instance.new("LocalScript");
+	["_LocalScript16"] = Instance.new("LocalScript");
 	["_InfiniteYield"] = Instance.new("TextButton");
 	["_UIStroke11"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint14"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript16"] = Instance.new("LocalScript");
+	["_LocalScript17"] = Instance.new("LocalScript");
 	["_DomainX"] = Instance.new("TextButton");
 	["_UIStroke12"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint15"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript17"] = Instance.new("LocalScript");
+	["_LocalScript18"] = Instance.new("LocalScript");
 	["_CMDX"] = Instance.new("TextButton");
 	["_UIStroke13"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint16"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript18"] = Instance.new("LocalScript");
+	["_LocalScript19"] = Instance.new("LocalScript");
 	["_Container3"] = Instance.new("Frame");
 	["_UIGridLayout1"] = Instance.new("UIGridLayout");
-	["_UIPadding2"] = Instance.new("UIPadding");
+	["_UIPadding3"] = Instance.new("UIPadding");
 	["_Arsenal"] = Instance.new("TextButton");
 	["_ImageLabel"] = Instance.new("ImageLabel");
 	["_TextLabel"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint17"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke14"] = Instance.new("UIStroke");
-	["_LocalScript19"] = Instance.new("LocalScript");
+	["_LocalScript20"] = Instance.new("LocalScript");
 	["_BananaEats"] = Instance.new("TextButton");
 	["_ImageLabel1"] = Instance.new("ImageLabel");
 	["_TextLabel1"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint18"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke15"] = Instance.new("UIStroke");
-	["_LocalScript20"] = Instance.new("LocalScript");
+	["_LocalScript21"] = Instance.new("LocalScript");
 	["_BrookhavenRP"] = Instance.new("TextButton");
 	["_ImageLabel2"] = Instance.new("ImageLabel");
 	["_TextLabel2"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint19"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke16"] = Instance.new("UIStroke");
-	["_LocalScript21"] = Instance.new("LocalScript");
+	["_LocalScript22"] = Instance.new("LocalScript");
 	["_ClownKilling"] = Instance.new("TextButton");
 	["_ImageLabel3"] = Instance.new("ImageLabel");
 	["_TextLabel3"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint20"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke17"] = Instance.new("UIStroke");
-	["_LocalScript22"] = Instance.new("LocalScript");
+	["_LocalScript23"] = Instance.new("LocalScript");
 	["_DollhouseRP"] = Instance.new("TextButton");
 	["_ImageLabel4"] = Instance.new("ImageLabel");
 	["_TextLabel4"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint21"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke18"] = Instance.new("UIStroke");
-	["_LocalScript23"] = Instance.new("LocalScript");
+	["_LocalScript24"] = Instance.new("LocalScript");
 	["_FreeRadio"] = Instance.new("TextButton");
 	["_ImageLabel5"] = Instance.new("ImageLabel");
 	["_TextLabel5"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint22"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke19"] = Instance.new("UIStroke");
-	["_LocalScript24"] = Instance.new("LocalScript");
+	["_LocalScript25"] = Instance.new("LocalScript");
 	["_HideNSeekExtreme"] = Instance.new("TextButton");
 	["_ImageLabel6"] = Instance.new("ImageLabel");
 	["_TextLabel6"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint23"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke20"] = Instance.new("UIStroke");
-	["_LocalScript25"] = Instance.new("LocalScript");
+	["_LocalScript26"] = Instance.new("LocalScript");
 	["_HoldPeopleTheGame"] = Instance.new("TextButton");
 	["_ImageLabel7"] = Instance.new("ImageLabel");
 	["_TextLabel7"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint24"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke21"] = Instance.new("UIStroke");
-	["_LocalScript26"] = Instance.new("LocalScript");
+	["_LocalScript27"] = Instance.new("LocalScript");
 	["_MurderMystery2"] = Instance.new("TextButton");
 	["_ImageLabel8"] = Instance.new("ImageLabel");
 	["_TextLabel8"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint25"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke22"] = Instance.new("UIStroke");
-	["_LocalScript27"] = Instance.new("LocalScript");
+	["_LocalScript28"] = Instance.new("LocalScript");
 	["_MurderMysteryXFreeRadioNHunter2"] = Instance.new("TextButton");
 	["_ImageLabel9"] = Instance.new("ImageLabel");
 	["_TextLabel9"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint26"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke23"] = Instance.new("UIStroke");
-	["_LocalScript28"] = Instance.new("LocalScript");
+	["_LocalScript29"] = Instance.new("LocalScript");
 	["_SniperBeta"] = Instance.new("TextButton");
 	["_ImageLabel10"] = Instance.new("ImageLabel");
 	["_TextLabel10"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint27"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke24"] = Instance.new("UIStroke");
-	["_LocalScript29"] = Instance.new("LocalScript");
+	["_LocalScript30"] = Instance.new("LocalScript");
 	["_StopItSlender"] = Instance.new("TextButton");
 	["_ImageLabel11"] = Instance.new("ImageLabel");
 	["_TextLabel11"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint28"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke25"] = Instance.new("UIStroke");
-	["_LocalScript30"] = Instance.new("LocalScript");
+	["_LocalScript31"] = Instance.new("LocalScript");
 	["_TowerOfFun"] = Instance.new("TextButton");
 	["_ImageLabel12"] = Instance.new("ImageLabel");
 	["_TextLabel12"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint29"] = Instance.new("UITextSizeConstraint");
 	["_UIStroke26"] = Instance.new("UIStroke");
-	["_LocalScript31"] = Instance.new("LocalScript");
+	["_LocalScript32"] = Instance.new("LocalScript");
 	["_Container1"] = Instance.new("Frame");
 	["_HipHeight"] = Instance.new("TextBox");
 	["_UIStroke27"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint30"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript32"] = Instance.new("LocalScript");
+	["_LocalScript33"] = Instance.new("LocalScript");
 	["_MaxSlopeAngle"] = Instance.new("TextBox");
 	["_UIStroke28"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint31"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript33"] = Instance.new("LocalScript");
+	["_LocalScript34"] = Instance.new("LocalScript");
 	["_WalkSpeed"] = Instance.new("TextBox");
 	["_UIStroke29"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint32"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript34"] = Instance.new("LocalScript");
+	["_LocalScript35"] = Instance.new("LocalScript");
 	["_JumpPower"] = Instance.new("TextBox");
 	["_UIStroke30"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint33"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript35"] = Instance.new("LocalScript");
+	["_LocalScript36"] = Instance.new("LocalScript");
 	["_Sit"] = Instance.new("TextButton");
 	["_UIStroke31"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint34"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript36"] = Instance.new("LocalScript");
+	["_LocalScript37"] = Instance.new("LocalScript");
 	["_Jump"] = Instance.new("TextButton");
 	["_UIStroke32"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint35"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript37"] = Instance.new("LocalScript");
+	["_LocalScript38"] = Instance.new("LocalScript");
 	["_ResetCharacter"] = Instance.new("TextButton");
 	["_UIStroke33"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint36"] = Instance.new("UITextSizeConstraint");
 	["_Container4"] = Instance.new("Frame");
 	["_UIGridLayout2"] = Instance.new("UIGridLayout");
-	["_UIPadding3"] = Instance.new("UIPadding");
-	["_LocalScript38"] = Instance.new("LocalScript");
 	["_UIPadding4"] = Instance.new("UIPadding");
+	["_LocalScript39"] = Instance.new("LocalScript");
+	["_UIPadding5"] = Instance.new("UIPadding");
 	["_UIGridLayout3"] = Instance.new("UIGridLayout");
 	["_Freeze"] = Instance.new("TextButton");
 	["_UIStroke34"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint37"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript39"] = Instance.new("LocalScript");
+	["_LocalScript40"] = Instance.new("LocalScript");
 	["_FieldofView"] = Instance.new("TextBox");
 	["_UIStroke35"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint38"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript40"] = Instance.new("LocalScript");
+	["_LocalScript41"] = Instance.new("LocalScript");
 	["_Health"] = Instance.new("TextBox");
 	["_UIStroke36"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint39"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript41"] = Instance.new("LocalScript");
+	["_LocalScript42"] = Instance.new("LocalScript");
 	["_Container41"] = Instance.new("Frame");
 	["_UIGridLayout4"] = Instance.new("UIGridLayout");
-	["_UIPadding5"] = Instance.new("UIPadding");
+	["_UIPadding6"] = Instance.new("UIPadding");
 	["_BackdoorLoadstring"] = Instance.new("TextButton");
 	["_UIStroke37"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint40"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript42"] = Instance.new("LocalScript");
+	["_LocalScript43"] = Instance.new("LocalScript");
 	["_FrontflipNBackflip"] = Instance.new("TextButton");
 	["_UIStroke38"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint41"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript43"] = Instance.new("LocalScript");
+	["_LocalScript44"] = Instance.new("LocalScript");
 	["_WalkOnWalls"] = Instance.new("TextButton");
 	["_UIStroke39"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint42"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript44"] = Instance.new("LocalScript");
+	["_LocalScript45"] = Instance.new("LocalScript");
 	["_TAS"] = Instance.new("TextButton");
 	["_UIStroke40"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint43"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript45"] = Instance.new("LocalScript");
+	["_LocalScript46"] = Instance.new("LocalScript");
 	["_ClownKidnap"] = Instance.new("TextBox");
 	["_UIStroke41"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint44"] = Instance.new("UITextSizeConstraint");
@@ -262,47 +249,47 @@ local Converted = {
 	["_UITextSizeConstraint46"] = Instance.new("UITextSizeConstraint");
 	["_Container5"] = Instance.new("Frame");
 	["_UIGridLayout5"] = Instance.new("UIGridLayout");
-	["_UIPadding6"] = Instance.new("UIPadding");
+	["_UIPadding7"] = Instance.new("UIPadding");
 	["_AstraHub"] = Instance.new("TextButton");
 	["_UIStroke45"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint47"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript46"] = Instance.new("LocalScript");
+	["_LocalScript47"] = Instance.new("LocalScript");
 	["_DemonicHub"] = Instance.new("TextButton");
 	["_UIStroke46"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint48"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript47"] = Instance.new("LocalScript");
+	["_LocalScript48"] = Instance.new("LocalScript");
 	["_OwlHub"] = Instance.new("TextButton");
 	["_UIStroke47"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint49"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript48"] = Instance.new("LocalScript");
+	["_LocalScript49"] = Instance.new("LocalScript");
 	["_ScreepstuHub1"] = Instance.new("TextButton");
 	["_UIStroke48"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint50"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript49"] = Instance.new("LocalScript");
+	["_LocalScript50"] = Instance.new("LocalScript");
 	["_ReaperHub"] = Instance.new("TextButton");
 	["_UIStroke49"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint51"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript50"] = Instance.new("LocalScript");
+	["_LocalScript51"] = Instance.new("LocalScript");
 	["_RedzHub"] = Instance.new("TextButton");
 	["_UIStroke50"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint52"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript51"] = Instance.new("LocalScript");
+	["_LocalScript52"] = Instance.new("LocalScript");
 	["_ZapHub"] = Instance.new("TextButton");
 	["_UIStroke51"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint53"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript52"] = Instance.new("LocalScript");
+	["_LocalScript53"] = Instance.new("LocalScript");
 	["_SpaceHub"] = Instance.new("TextButton");
 	["_UIStroke52"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint54"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript53"] = Instance.new("LocalScript");
+	["_LocalScript54"] = Instance.new("LocalScript");
 	["_SolarisHub"] = Instance.new("TextButton");
 	["_UIStroke53"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint55"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript54"] = Instance.new("LocalScript");
+	["_LocalScript55"] = Instance.new("LocalScript");
 	["_ShifeHub"] = Instance.new("TextButton");
 	["_UIStroke54"] = Instance.new("UIStroke");
 	["_UITextSizeConstraint56"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript55"] = Instance.new("LocalScript");
+	["_LocalScript56"] = Instance.new("LocalScript");
 	["_Greet"] = Instance.new("LocalScript");
 	["_SoundSystem"] = Instance.new("LocalScript");
 	["_hovers"] = Instance.new("Sound");
@@ -311,28 +298,28 @@ local Converted = {
 	["_T1"] = Instance.new("TextButton");
 	["_Horiz_Line1"] = Instance.new("Frame");
 	["_UITextSizeConstraint57"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript56"] = Instance.new("LocalScript");
+	["_LocalScript57"] = Instance.new("LocalScript");
 	["_T2"] = Instance.new("TextButton");
 	["_Horiz_Line2"] = Instance.new("Frame");
 	["_UITextSizeConstraint58"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript57"] = Instance.new("LocalScript");
+	["_LocalScript58"] = Instance.new("LocalScript");
 	["_T3"] = Instance.new("TextButton");
 	["_Horiz_Line3"] = Instance.new("Frame");
 	["_UITextSizeConstraint59"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript58"] = Instance.new("LocalScript");
+	["_LocalScript59"] = Instance.new("LocalScript");
 	["_T4"] = Instance.new("TextButton");
 	["_Horiz_Line4"] = Instance.new("Frame");
 	["_UITextSizeConstraint60"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript59"] = Instance.new("LocalScript");
+	["_LocalScript60"] = Instance.new("LocalScript");
 	["_T5"] = Instance.new("TextButton");
 	["_Horiz_Line5"] = Instance.new("Frame");
 	["_UITextSizeConstraint61"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript60"] = Instance.new("LocalScript");
+	["_LocalScript61"] = Instance.new("LocalScript");
 	["_UIListLayout"] = Instance.new("UIListLayout");
 	["_MainBottom"] = Instance.new("Frame");
 	["_Horiz_Line6"] = Instance.new("Frame");
 	["_TextLabel13"] = Instance.new("TextLabel");
-	["_UIPadding7"] = Instance.new("UIPadding");
+	["_UIPadding8"] = Instance.new("UIPadding");
 	["_UITextSizeConstraint62"] = Instance.new("UITextSizeConstraint");
 	["_Info"] = Instance.new("LocalScript");
 }
@@ -345,16 +332,6 @@ Converted["_MainTop"].BorderSizePixel = 0
 Converted["_MainTop"].Size = UDim2.new(1, 0, 0, 30)
 Converted["_MainTop"].Name = "MainTop"
 Converted["_MainTop"].Parent = Converted["_ScreepstuHub"]
-
-Converted["_Icon"].Image = "rbxassetid://6510893737"
-Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Icon"].BackgroundTransparency = 0.699999988079071
-Converted["_Icon"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Icon"].BorderSizePixel = 0
-Converted["_Icon"].Size = UDim2.new(0, 29, 0, 29)
-Converted["_Icon"].ZIndex = 3
-Converted["_Icon"].Name = "Icon"
-Converted["_Icon"].Parent = Converted["_MainTop"]
 
 Converted["_LabelAndTitle"].Font = Enum.Font.Arial
 Converted["_LabelAndTitle"].Text = "Screepstu Hub"
@@ -450,6 +427,37 @@ Converted["_VisibleContainer"].Parent = Converted["_MainTop"]
 Converted["_UITextSizeConstraint3"].MaxTextSize = 14
 Converted["_UITextSizeConstraint3"].Parent = Converted["_VisibleContainer"]
 
+Converted["_Time"].Font = Enum.Font.Arial
+Converted["_Time"].Text = "???"
+Converted["_Time"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Time"].TextSize = 14
+Converted["_Time"].TextXAlignment = Enum.TextXAlignment.Right
+Converted["_Time"].AnchorPoint = Vector2.new(1, 0)
+Converted["_Time"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Time"].BackgroundTransparency = 1
+Converted["_Time"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Time"].BorderSizePixel = 0
+Converted["_Time"].Position = UDim2.new(1, -156, 0, 0)
+Converted["_Time"].Size = UDim2.new(0, 270, 0, 29)
+Converted["_Time"].ZIndex = 3
+Converted["_Time"].Name = "Time"
+Converted["_Time"].Parent = Converted["_MainTop"]
+
+Converted["_UIPadding1"].PaddingRight = UDim.new(0, 8)
+Converted["_UIPadding1"].Parent = Converted["_Time"]
+
+Converted["_Icon"].Image = "rbxassetid://6510893737"
+Converted["_Icon"].Active = false
+Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Icon"].BackgroundTransparency = 0.699999988079071
+Converted["_Icon"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Icon"].BorderSizePixel = 0
+Converted["_Icon"].Selectable = false
+Converted["_Icon"].Size = UDim2.new(0, 29, 0, 29)
+Converted["_Icon"].ZIndex = 3
+Converted["_Icon"].Name = "Icon"
+Converted["_Icon"].Parent = Converted["_MainTop"]
+
 Converted["_Verti_Line"].BackgroundColor3 = Color3.fromRGB(37.00000159442425, 37.00000159442425, 37.00000159442425)
 Converted["_Verti_Line"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Verti_Line"].BorderSizePixel = 0
@@ -518,9 +526,9 @@ Converted["_UIGridLayout"].CellSize = UDim2.new(0, 100, 0, 75)
 Converted["_UIGridLayout"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIGridLayout"].Parent = Converted["_Container2"]
 
-Converted["_UIPadding1"].PaddingLeft = UDim.new(0, 16)
-Converted["_UIPadding1"].PaddingTop = UDim.new(0, 16)
-Converted["_UIPadding1"].Parent = Converted["_Container2"]
+Converted["_UIPadding2"].PaddingLeft = UDim.new(0, 16)
+Converted["_UIPadding2"].PaddingTop = UDim.new(0, 16)
+Converted["_UIPadding2"].Parent = Converted["_Container2"]
 
 Converted["_AimbotV3"].Font = Enum.Font.Arial
 Converted["_AimbotV3"].Text = "AimbotV3"
@@ -808,9 +816,9 @@ Converted["_UIGridLayout1"].CellSize = UDim2.new(0, 100, 0, 75)
 Converted["_UIGridLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIGridLayout1"].Parent = Converted["_Container3"]
 
-Converted["_UIPadding2"].PaddingLeft = UDim.new(0, 16)
-Converted["_UIPadding2"].PaddingTop = UDim.new(0, 16)
-Converted["_UIPadding2"].Parent = Converted["_Container3"]
+Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 16)
+Converted["_UIPadding3"].PaddingTop = UDim.new(0, 16)
+Converted["_UIPadding3"].Parent = Converted["_Container3"]
 
 Converted["_Arsenal"].Font = Enum.Font.SourceSans
 Converted["_Arsenal"].Text = ""
@@ -1559,13 +1567,13 @@ Converted["_UIGridLayout2"].CellSize = UDim2.new(0, 100, 0, 75)
 Converted["_UIGridLayout2"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIGridLayout2"].Parent = Converted["_Container4"]
 
-Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 16)
-Converted["_UIPadding3"].PaddingTop = UDim.new(0, 16)
-Converted["_UIPadding3"].Parent = Converted["_Container4"]
-
 Converted["_UIPadding4"].PaddingLeft = UDim.new(0, 16)
 Converted["_UIPadding4"].PaddingTop = UDim.new(0, 16)
-Converted["_UIPadding4"].Parent = Converted["_Container1"]
+Converted["_UIPadding4"].Parent = Converted["_Container4"]
+
+Converted["_UIPadding5"].PaddingLeft = UDim.new(0, 16)
+Converted["_UIPadding5"].PaddingTop = UDim.new(0, 16)
+Converted["_UIPadding5"].Parent = Converted["_Container1"]
 
 Converted["_UIGridLayout3"].CellSize = UDim2.new(0, 100, 0, 75)
 Converted["_UIGridLayout3"].SortOrder = Enum.SortOrder.LayoutOrder
@@ -1651,9 +1659,9 @@ Converted["_UIGridLayout4"].CellSize = UDim2.new(0, 100, 0, 75)
 Converted["_UIGridLayout4"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIGridLayout4"].Parent = Converted["_Container41"]
 
-Converted["_UIPadding5"].PaddingLeft = UDim.new(0, 16)
-Converted["_UIPadding5"].PaddingTop = UDim.new(0, 16)
-Converted["_UIPadding5"].Parent = Converted["_Container41"]
+Converted["_UIPadding6"].PaddingLeft = UDim.new(0, 16)
+Converted["_UIPadding6"].PaddingTop = UDim.new(0, 16)
+Converted["_UIPadding6"].Parent = Converted["_Container41"]
 
 Converted["_BackdoorLoadstring"].Font = Enum.Font.Arial
 Converted["_BackdoorLoadstring"].Text = "Backdoor Loadstring"
@@ -1837,9 +1845,9 @@ Converted["_UIGridLayout5"].CellSize = UDim2.new(0, 100, 0, 75)
 Converted["_UIGridLayout5"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIGridLayout5"].Parent = Converted["_Container5"]
 
-Converted["_UIPadding6"].PaddingLeft = UDim.new(0, 16)
-Converted["_UIPadding6"].PaddingTop = UDim.new(0, 16)
-Converted["_UIPadding6"].Parent = Converted["_Container5"]
+Converted["_UIPadding7"].PaddingLeft = UDim.new(0, 16)
+Converted["_UIPadding7"].PaddingTop = UDim.new(0, 16)
+Converted["_UIPadding7"].Parent = Converted["_Container5"]
 
 Converted["_AstraHub"].Font = Enum.Font.Arial
 Converted["_AstraHub"].Text = "Astra Hub"
@@ -2240,8 +2248,8 @@ Converted["_TextLabel13"].Position = UDim2.new(0, 0, 1, 0)
 Converted["_TextLabel13"].Size = UDim2.new(1, 0, 1, -1)
 Converted["_TextLabel13"].Parent = Converted["_MainBottom"]
 
-Converted["_UIPadding7"].PaddingLeft = UDim.new(0, 8)
-Converted["_UIPadding7"].Parent = Converted["_TextLabel13"]
+Converted["_UIPadding8"].PaddingLeft = UDim.new(0, 8)
+Converted["_UIPadding8"].Parent = Converted["_TextLabel13"]
 
 Converted["_UITextSizeConstraint62"].MaxTextSize = 14
 Converted["_UITextSizeConstraint62"].Parent = Converted["_TextLabel13"]
@@ -2250,7 +2258,7 @@ Converted["_ScreepstuHub"].Parent = game.CoreGui
 
 local fake_module_scripts = {}
 
-local function IATSMGL_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.LabelAndTitle.LocalScript
+local function PIYUCB_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.LabelAndTitle.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_LabelAndTitle"]
@@ -2263,9 +2271,9 @@ local function IATSMGL_fake_script() -- Fake Script: Workspace.ScreepstuHub.Main
         return req(obj)
     end
 
-	script.Parent.Text = game.Stats.Name .. " - Screepstu Hub"
+	script.Parent.Text = game.Name .. " - Screepstu Hub"
 end
-local function QOWPQY_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Close.LocalScript
+local function NEPN_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close"]
@@ -2279,13 +2287,6 @@ local function QOWPQY_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainT
     end
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Container1.Visible = false
-		script.Parent.Parent.Parent.Container2.Visible = false
-		script.Parent.Parent.Parent.Container3.Visible = false
-		script.Parent.Parent.Parent.Container4.Visible = false
-		script.Parent.Parent.Parent.Container5.Visible = false
-	
-		wait(.5)
 	
 		script.Parent.Parent.Parent.Verti_Line:TweenPosition(
 			UDim2.new(5, 100, 0 ,30),
@@ -2327,7 +2328,7 @@ local function QOWPQY_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainT
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-local function GLEX_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Minimise.LocalScript
+local function HCXCWO_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Minimise.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Minimise"]
@@ -2348,6 +2349,7 @@ local function GLEX_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop
 		sg.Container3.Visible = false
 		sg.Container4.Visible = false
 		sg.Container5.Visible = false
+		sg.MainBottom.Visible = false
 		sg.MainTop.Visible = false
 		sg.Tab.Visible = false
 		sg.Horiz_Line.Visible = false
@@ -2355,7 +2357,7 @@ local function GLEX_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop
 		sg.RestoreUp.Visible = true
 	end)
 end
-local function CFGQBDN_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Exit.LocalScript
+local function HQMID_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Exit.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Exit"]
@@ -2372,7 +2374,7 @@ local function CFGQBDN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Main
 		game:shutdown()
 	end)
 end
-local function XMGCI_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.VisibleContainer.LocalScript
+local function QUHFKY_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.VisibleContainer.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_VisibleContainer"]
@@ -2393,7 +2395,66 @@ local function XMGCI_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTo
 		script.Parent.Parent.Parent.Container5.Visible = false
 	end)
 end
-local function SGUZULC_fake_script() -- Fake Script: Workspace.ScreepstuHub.RestoreUp.LocalScript
+local function GRRAL_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Time.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Time"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	repeat
+		local seconds = math.floor(workspace.DistributedGameTime)
+		local minutes = math.floor(workspace.DistributedGameTime / 60)
+		local hours = math.floor(workspace.DistributedGameTime / 60 / 60)
+		local seconds = seconds - (minutes * 60)
+		local minutes = minutes - (hours * 60)
+		if hours < 1 then if minutes < 1 then
+				script.Parent.Text = seconds else
+				script.Parent.Text = minutes .. ":" .. seconds
+			end
+		else
+			script.Parent.Text = hours .. ":" .. minutes .. ":" .. seconds
+		end
+		wait(1)
+	until false
+end
+local function THDVHG_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Icon.DoubleClickPrint
+    local script = Instance.new("LocalScript")
+    script.Name = "DoubleClickPrint"
+    script.Parent = Converted["_Icon"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local icon = script.Parent
+	
+	local clickTimeThreshold = 0.5
+	local lastClickTime = 0
+	
+	icon.MouseButton1Click:Connect(function()
+	    local currentTime = tick()
+	    if currentTime - lastClickTime <= clickTimeThreshold then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Screepstu Hub";
+				Text = "version: 0.4";
+				Duration = 2.5;
+			})
+	    end
+	    lastClickTime = currentTime
+	end)
+end
+local function XFBEF_fake_script() -- Fake Script: Workspace.ScreepstuHub.RestoreUp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_RestoreUp"]
@@ -2420,7 +2481,7 @@ local function SGUZULC_fake_script() -- Fake Script: Workspace.ScreepstuHub.Rest
 		sg.RestoreUp.Visible = false
 	end)
 end
-local function YWADFD_fake_script() -- Fake Script: Workspace.ScreepstuHub.RestoreUp.Dragger
+local function FBNCDHL_fake_script() -- Fake Script: Workspace.ScreepstuHub.RestoreUp.Dragger
     local script = Instance.new("LocalScript")
     script.Name = "Dragger"
     script.Parent = Converted["_RestoreUp"]
@@ -2474,7 +2535,7 @@ local function YWADFD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Resto
 	
 	dragify(script.Parent)
 end
-local function XCZO_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.AimbotV3.LocalScript
+local function ZUWOFWH_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.AimbotV3.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AimbotV3"]
@@ -2491,7 +2552,7 @@ local function XCZO_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet("https://rentry.co/aimbotv3/raw"))()
 	end)
 end
-local function DCAQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.AntiLag.LocalScript
+local function USEF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.AntiLag.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AntiLag"]
@@ -2508,7 +2569,7 @@ local function DCAQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet('https://rentry.co/antilag/raw'))()
 	end)
 end
-local function NHFXFOM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.BetterRoblox.LocalScript
+local function SMST_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.BetterRoblox.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_BetterRoblox"]
@@ -2526,7 +2587,7 @@ local function NHFXFOM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet("https://eternityhub.xyz/BetterRoblox/Loader"))()
 	end)
 end
-local function KHLBM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.DExplorer.LocalScript
+local function OTRID_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.DExplorer.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_DExplorer"]
@@ -2543,7 +2604,7 @@ local function KHLBM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Creepstu/DExplorer/main/source"))()	
 	end)
 end
-local function LDBOM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.Hydroxide.LocalScript
+local function ILVBX_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.Hydroxide.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Hydroxide"]
@@ -2568,7 +2629,7 @@ local function LDBOM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 		webImport("ui/main")
 	end)
 end
-local function VRAPZ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.NexusWeaponry.LocalScript
+local function SEIYE_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.NexusWeaponry.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_NexusWeaponry"]
@@ -2585,7 +2646,7 @@ local function VRAPZ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 		loadstring(game:HttpGet('https://rentry.co/nexusweaponry/raw'))()
 	end)
 end
-local function LJBGWI_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.SecureDex.LocalScript
+local function QFZZ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.SecureDex.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SecureDex"]
@@ -2602,7 +2663,7 @@ local function LJBGWI_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 	end)
 end
-local function XIEIBEA_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.UnnamedESP.LocalScript
+local function LVGXG_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.UnnamedESP.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_UnnamedESP"]
@@ -2619,7 +2680,7 @@ local function XIEIBEA_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
 	end)
 end
-local function PQVK_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.WRDAimbot.LocalScript
+local function YFRM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.WRDAimbot.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_WRDAimbot"]
@@ -2636,7 +2697,7 @@ local function PQVK_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Creepstu/WeAreDevs-Aimbot/main/source'))()
 	end)
 end
-local function XOUIL_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.WRDESP.LocalScript
+local function IGARW_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.WRDESP.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_WRDESP"]
@@ -2653,7 +2714,7 @@ local function XOUIL_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Creepstu/WeAreDevs-ESP/main/source'))()
 	end)
 end
-local function BFVMTKX_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.InfiniteYield.LocalScript
+local function RNXEASG_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.InfiniteYield.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_InfiniteYield"]
@@ -2670,7 +2731,7 @@ local function BFVMTKX_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/vDrevn/IY/main/source"))()
 	end)
 end
-local function JVCUIZ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.DomainX.LocalScript
+local function UFPJVO_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.DomainX.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_DomainX"]
@@ -2687,7 +2748,7 @@ local function JVCUIZ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 	end)
 end
-local function VUGMTX_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.CMDX.LocalScript
+local function WMTH_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container2.CMDX.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_CMDX"]
@@ -2704,7 +2765,7 @@ local function VUGMTX_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
 	end)
 end
-local function POZM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.Arsenal.LocalScript
+local function CIARPGN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.Arsenal.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Arsenal"]
@@ -2721,7 +2782,7 @@ local function POZM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet('https://rentry.co/arsenalaimbot/raw'))()
 	end)
 end
-local function RXDID_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.BananaEats.LocalScript
+local function CPYFI_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.BananaEats.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_BananaEats"]
@@ -2738,7 +2799,7 @@ local function RXDID_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 		loadstring(game:HttpGet("https://gist.githubusercontent.com/NovaVanity/131e258977e50e1ec0184c72818b8bfd/raw"))()
 	end)
 end
-local function PVJQRAO_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.BrookhavenRP.LocalScript
+local function HWTO_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.BrookhavenRP.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_BrookhavenRP"]
@@ -2755,7 +2816,7 @@ local function PVJQRAO_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Max8387/Zendz/main/README.md"))()
 	end)
 end
-local function IMOQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.ClownKilling.LocalScript
+local function UYHEOX_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.ClownKilling.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ClownKilling"]
@@ -2775,7 +2836,7 @@ local function IMOQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		end)
 	end)
 end
-local function BEMNWUU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.DollhouseRP.LocalScript
+local function ACISR_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.DollhouseRP.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_DollhouseRP"]
@@ -2792,7 +2853,7 @@ local function BEMNWUU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet('https://rentry.co/dohoropl/raw'))()
 	end)
 end
-local function DSLWEJ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.FreeRadio.LocalScript
+local function EMUR_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.FreeRadio.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_FreeRadio"]
@@ -2809,7 +2870,7 @@ local function DSLWEJ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Creepstu/FreeRadioBoombox/main/source'))()
 	end)
 end
-local function DNTJYTB_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.HideNSeekExtreme.LocalScript
+local function DEOI_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.HideNSeekExtreme.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_HideNSeekExtreme"]
@@ -2826,7 +2887,7 @@ local function DNTJYTB_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet("https://rentry.co/vdvp/raw"))()
 	end)
 end
-local function PHVG_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.HoldPeopleTheGame.LocalScript
+local function BWGDYS_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.HoldPeopleTheGame.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_HoldPeopleTheGame"]
@@ -2843,7 +2904,7 @@ local function PHVG_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet("https://rentry.co/zyfl/raw"))()
 	end)
 end
-local function XSAAGHS_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.MurderMystery2.LocalScript
+local function ECWF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.MurderMystery2.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_MurderMystery2"]
@@ -2860,7 +2921,7 @@ local function XSAAGHS_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
 	end)
 end
-local function FBLKEZ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.MurderMysteryXFreeRadioNHunter2.LocalScript
+local function JKQOAQK_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.MurderMysteryXFreeRadioNHunter2.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_MurderMysteryXFreeRadioNHunter2"]
@@ -2877,7 +2938,7 @@ local function FBLKEZ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrGeneral/UIORAWBNYM/main/source"))()
 	end)
 end
-local function MADFVQQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.SniperBeta.LocalScript
+local function LLJYZMF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.SniperBeta.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SniperBeta"]
@@ -2894,7 +2955,7 @@ local function MADFVQQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrGeneral/80UTADXLI6/main/source"))()
 	end)
 end
-local function QSPHE_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.StopItSlender.LocalScript
+local function YFFGHK_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.StopItSlender.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_StopItSlender"]
@@ -2911,7 +2972,7 @@ local function QSPHE_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 		loadstring(game:HttpGet("https://rentry.co/nwhlc/raw"))()
 	end)
 end
-local function WRGZJNC_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.TowerOfFun.LocalScript
+local function ABGSBM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container3.TowerOfFun.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TowerOfFun"]
@@ -2928,7 +2989,7 @@ local function WRGZJNC_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet("https://rentry.co/tffn/raw"))()
 	end)
 end
-local function THZAP_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.HipHeight.LocalScript
+local function AZTU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.HipHeight.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_HipHeight"]
@@ -2954,7 +3015,7 @@ local function THZAP_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 	
 	textBox.Changed:Connect(onTextChanged)
 end
-local function WEYEN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.MaxSlopeAngle.LocalScript
+local function HMQM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.MaxSlopeAngle.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_MaxSlopeAngle"]
@@ -2980,7 +3041,7 @@ local function WEYEN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 	
 	textBox.Changed:Connect(onTextChanged)
 end
-local function SZFPKU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.WalkSpeed.LocalScript
+local function WBLVU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.WalkSpeed.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_WalkSpeed"]
@@ -3006,7 +3067,7 @@ local function SZFPKU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 	
 	textBox.Changed:Connect(onTextChanged)
 end
-local function PVKZHF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.JumpPower.LocalScript
+local function CFVVAY_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.JumpPower.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_JumpPower"]
@@ -3032,7 +3093,7 @@ local function PVKZHF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 	
 	textBox.Changed:Connect(onTextChanged)
 end
-local function REXUQBR_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.Sit.LocalScript
+local function DCQXD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.Sit.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Sit"]
@@ -3063,7 +3124,7 @@ local function REXUQBR_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		end	
 	end)
 end
-local function PJWSA_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.Jump.LocalScript
+local function EECBLHA_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.Jump.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Jump"]
@@ -3080,7 +3141,7 @@ local function PJWSA_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contai
 		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
 	end)
 end
-local function WSFIAF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.ResetCharacter.LocalScript
+local function AIQOVFH_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.ResetCharacter.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ResetCharacter"]
@@ -3097,7 +3158,7 @@ local function WSFIAF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
 	end)
 end
-local function BIWHOQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.Freeze.LocalScript
+local function KCKOPJ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.Freeze.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Freeze"]
@@ -3141,7 +3202,7 @@ local function BIWHOQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		end	
 	end)
 end
-local function JSLWOE_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.FieldofView.LocalScript
+local function OSGM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.FieldofView.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_FieldofView"]
@@ -3176,7 +3237,7 @@ local function JSLWOE_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 	
 	textBox.Changed:Connect(onTextChanged)
 end
-local function AWJVJR_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.Health.LocalScript
+local function ZJKRY_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container1.Health.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Health"]
@@ -3202,7 +3263,7 @@ local function AWJVJR_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 	
 	textBox.Changed:Connect(onTextChanged)
 end
-local function ENJV_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container4.BackdoorLoadstring.LocalScript
+local function YYBCKHH_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container4.BackdoorLoadstring.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_BackdoorLoadstring"]
@@ -3219,7 +3280,7 @@ local function ENJV_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 	end)
 end
-local function HZHH_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container4.FrontflipNBackflip.LocalScript
+local function FSFUVET_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container4.FrontflipNBackflip.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_FrontflipNBackflip"]
@@ -3236,7 +3297,7 @@ local function HZHH_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet('https://rentry.co/parkourflip/raw'))()
 	end)
 end
-local function QVEP_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container4.WalkOnWalls.LocalScript
+local function LSYRU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container4.WalkOnWalls.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_WalkOnWalls"]
@@ -3253,7 +3314,7 @@ local function QVEP_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Creepstu/WalkOnWalls/main/source'))()
 	end)
 end
-local function GAJFETY_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container4.TAS.LocalScript
+local function TGVBIHT_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container4.TAS.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TAS"]
@@ -3270,7 +3331,7 @@ local function GAJFETY_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet('https://rentry.co/ToAsSp/raw'))()
 	end)
 end
-local function HZFIVRT_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.AstraHub.LocalScript
+local function QUFRGWA_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.AstraHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AstraHub"]
@@ -3287,7 +3348,7 @@ local function HZFIVRT_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet("https://code4zaa.xyz/script/script-loader.lua"))()
 	end)
 end
-local function KFDVKK_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.DemonicHub.LocalScript
+local function TSJYGQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.DemonicHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_DemonicHub"]
@@ -3304,7 +3365,7 @@ local function KFDVKK_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/DemonicHub/Script/main/Main"))()
 	end)
 end
-local function ZAJHPDN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.OwlHub.LocalScript
+local function MRVOM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.OwlHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_OwlHub"]
@@ -3321,7 +3382,7 @@ local function ZAJHPDN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'))()
 	end)
 end
-local function SVNY_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.ScreepstuHub.LocalScript
+local function AVLJ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.ScreepstuHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ScreepstuHub1"]
@@ -3338,7 +3399,7 @@ local function SVNY_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/creepstu/ScreepstuHub/main/source"))()
 	end)
 end
-local function CKUDTIN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.ReaperHub.LocalScript
+local function UCHHAD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.ReaperHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ReaperHub"]
@@ -3355,7 +3416,7 @@ local function CKUDTIN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Cont
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua'))()
 	end)
 end
-local function PAEU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.RedzHub.LocalScript
+local function SVSEJD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.RedzHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_RedzHub"]
@@ -3372,7 +3433,7 @@ local function PAEU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB'))()
 	end)
 end
-local function IGAM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.ZapHub.LocalScript
+local function GWEPQDG_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.ZapHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ZapHub"]
@@ -3389,7 +3450,7 @@ local function IGAM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
 	end)
 end
-local function ARXWLD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.SpaceHub.LocalScript
+local function NSGCJBN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.SpaceHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SpaceHub"]
@@ -3406,7 +3467,7 @@ local function ARXWLD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Conta
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Lucasfin000/Orbit-UI-Library/main/Library", true))()
 	end)
 end
-local function PLJN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.SolarisHub.LocalScript
+local function ARHNB_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.SolarisHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SolarisHub"]
@@ -3423,7 +3484,7 @@ local function PLJN_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
 	end)
 end
-local function QJVU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.ShifeHub.LocalScript
+local function YNQTD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Container5.ShifeHub.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ShifeHub"]
@@ -3440,7 +3501,7 @@ local function QJVU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Contain
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexzzv/Alexzzv/main/Lop"))()
 	end)
 end
-local function UIJQYP_fake_script() -- Fake Script: Workspace.ScreepstuHub.Greet
+local function KCMZM_fake_script() -- Fake Script: Workspace.ScreepstuHub.Greet
     local script = Instance.new("LocalScript")
     script.Name = "Greet"
     script.Parent = Converted["_ScreepstuHub"]
@@ -3470,7 +3531,7 @@ local function UIJQYP_fake_script() -- Fake Script: Workspace.ScreepstuHub.Greet
 		aa:Destroy()
 	end)
 end
-local function WRTLMU_fake_script() -- Fake Script: Workspace.ScreepstuHub.SoundSystem
+local function VTPVJY_fake_script() -- Fake Script: Workspace.ScreepstuHub.SoundSystem
     local script = Instance.new("LocalScript")
     script.Name = "SoundSystem"
     script.Parent = Converted["_ScreepstuHub"]
@@ -3499,7 +3560,7 @@ local function WRTLMU_fake_script() -- Fake Script: Workspace.ScreepstuHub.Sound
 		end
 	end
 end
-local function PKDOHE_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T1.LocalScript
+local function EHEGUGJ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T1.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_T1"]
@@ -3520,7 +3581,7 @@ local function PKDOHE_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T
 		script.Parent.Parent.Parent.Container5.Visible = false
 	end)
 end
-local function QXXFBBT_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T2.LocalScript
+local function DSYVAGX_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T2.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_T2"]
@@ -3541,7 +3602,7 @@ local function QXXFBBT_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.
 		script.Parent.Parent.Parent.Container5.Visible = false
 	end)
 end
-local function VJNP_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T3.LocalScript
+local function QAXPPZ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T3.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_T3"]
@@ -3562,7 +3623,7 @@ local function VJNP_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T3.
 		script.Parent.Parent.Parent.Container5.Visible = false
 	end)
 end
-local function QKNF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T4.LocalScript
+local function CVCFO_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T4.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_T4"]
@@ -3583,7 +3644,7 @@ local function QKNF_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T4.
 		script.Parent.Parent.Parent.Container5.Visible = false
 	end)
 end
-local function RNOECV_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T5.LocalScript
+local function COYZQ_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T5.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_T5"]
@@ -3604,7 +3665,7 @@ local function RNOECV_fake_script() -- Fake Script: Workspace.ScreepstuHub.Tab.T
 		script.Parent.Parent.Parent.Container5.Visible = true
 	end)
 end
-local function GENUOD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Info
+local function SNMAQA_fake_script() -- Fake Script: Workspace.ScreepstuHub.Info
     local script = Instance.new("LocalScript")
     script.Name = "Info"
     script.Parent = Converted["_ScreepstuHub"]
@@ -3622,11 +3683,11 @@ local function GENUOD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Info
 	local tt = info.TextLabel
 	
 	for _, ui in pairs(screenGui:GetDescendants()) do
-		if ui:IsA("TextButton") or ui:IsA("TextLabel") or ui:IsA("TextBox") or ui:IsA("ImageLabel") then
+		if ui:IsA("TextButton") or ui:IsA("TextLabel") or ui:IsA("TextBox") or ui:IsA("ImageLabel") or ui:IsA("ImageButton") then
 			ui.MouseEnter:Connect(function()
 				--===========================================================--
 				if ui.Name == "Icon" then
-					tt.Text = "An unofficial Screepstu Hub logo."
+					tt.Text = "An unofficial Screepstu Hub logo. Double click the icon to see the version."
 				elseif ui.Name == "LabelAndTitle" then
 					tt.Text = "The game name and Screepstu Hub title."
 				elseif ui.Name == "Minimise" then
@@ -3741,68 +3802,70 @@ local function GENUOD_fake_script() -- Fake Script: Workspace.ScreepstuHub.Info
 	
 end
 
-coroutine.wrap(IATSMGL_fake_script)()
-coroutine.wrap(QOWPQY_fake_script)()
-coroutine.wrap(GLEX_fake_script)()
-coroutine.wrap(CFGQBDN_fake_script)()
-coroutine.wrap(XMGCI_fake_script)()
-coroutine.wrap(SGUZULC_fake_script)()
-coroutine.wrap(YWADFD_fake_script)()
-coroutine.wrap(XCZO_fake_script)()
-coroutine.wrap(DCAQ_fake_script)()
-coroutine.wrap(NHFXFOM_fake_script)()
-coroutine.wrap(KHLBM_fake_script)()
-coroutine.wrap(LDBOM_fake_script)()
-coroutine.wrap(VRAPZ_fake_script)()
-coroutine.wrap(LJBGWI_fake_script)()
-coroutine.wrap(XIEIBEA_fake_script)()
-coroutine.wrap(PQVK_fake_script)()
-coroutine.wrap(XOUIL_fake_script)()
-coroutine.wrap(BFVMTKX_fake_script)()
-coroutine.wrap(JVCUIZ_fake_script)()
-coroutine.wrap(VUGMTX_fake_script)()
-coroutine.wrap(POZM_fake_script)()
-coroutine.wrap(RXDID_fake_script)()
-coroutine.wrap(PVJQRAO_fake_script)()
-coroutine.wrap(IMOQ_fake_script)()
-coroutine.wrap(BEMNWUU_fake_script)()
-coroutine.wrap(DSLWEJ_fake_script)()
-coroutine.wrap(DNTJYTB_fake_script)()
-coroutine.wrap(PHVG_fake_script)()
-coroutine.wrap(XSAAGHS_fake_script)()
-coroutine.wrap(FBLKEZ_fake_script)()
-coroutine.wrap(MADFVQQ_fake_script)()
-coroutine.wrap(QSPHE_fake_script)()
-coroutine.wrap(WRGZJNC_fake_script)()
-coroutine.wrap(THZAP_fake_script)()
-coroutine.wrap(WEYEN_fake_script)()
-coroutine.wrap(SZFPKU_fake_script)()
-coroutine.wrap(PVKZHF_fake_script)()
-coroutine.wrap(REXUQBR_fake_script)()
-coroutine.wrap(PJWSA_fake_script)()
-coroutine.wrap(WSFIAF_fake_script)()
-coroutine.wrap(BIWHOQ_fake_script)()
-coroutine.wrap(JSLWOE_fake_script)()
-coroutine.wrap(AWJVJR_fake_script)()
-coroutine.wrap(ENJV_fake_script)()
-coroutine.wrap(HZHH_fake_script)()
-coroutine.wrap(QVEP_fake_script)()
-coroutine.wrap(GAJFETY_fake_script)()
-coroutine.wrap(HZFIVRT_fake_script)()
-coroutine.wrap(KFDVKK_fake_script)()
-coroutine.wrap(ZAJHPDN_fake_script)()
-coroutine.wrap(SVNY_fake_script)()
-coroutine.wrap(CKUDTIN_fake_script)()
-coroutine.wrap(PAEU_fake_script)()
-coroutine.wrap(IGAM_fake_script)()
-coroutine.wrap(ARXWLD_fake_script)()
-coroutine.wrap(PLJN_fake_script)()
-coroutine.wrap(QJVU_fake_script)()
-coroutine.wrap(UIJQYP_fake_script)()
-coroutine.wrap(WRTLMU_fake_script)()
-coroutine.wrap(PKDOHE_fake_script)()
-coroutine.wrap(QXXFBBT_fake_script)()
-coroutine.wrap(VJNP_fake_script)()
-coroutine.wrap(QKNF_fake_script)()
-coroutine.wrap(RNOECV_fake_script)()
-coroutine.wrap(GENUOD_fake_script)()
+coroutine.wrap(PIYUCB_fake_script)()
+coroutine.wrap(NEPN_fake_script)()
+coroutine.wrap(HCXCWO_fake_script)()
+coroutine.wrap(HQMID_fake_script)()
+coroutine.wrap(QUHFKY_fake_script)()
+coroutine.wrap(GRRAL_fake_script)()
+coroutine.wrap(THDVHG_fake_script)()
+coroutine.wrap(XFBEF_fake_script)()
+coroutine.wrap(FBNCDHL_fake_script)()
+coroutine.wrap(ZUWOFWH_fake_script)()
+coroutine.wrap(USEF_fake_script)()
+coroutine.wrap(SMST_fake_script)()
+coroutine.wrap(OTRID_fake_script)()
+coroutine.wrap(ILVBX_fake_script)()
+coroutine.wrap(SEIYE_fake_script)()
+coroutine.wrap(QFZZ_fake_script)()
+coroutine.wrap(LVGXG_fake_script)()
+coroutine.wrap(YFRM_fake_script)()
+coroutine.wrap(IGARW_fake_script)()
+coroutine.wrap(RNXEASG_fake_script)()
+coroutine.wrap(UFPJVO_fake_script)()
+coroutine.wrap(WMTH_fake_script)()
+coroutine.wrap(CIARPGN_fake_script)()
+coroutine.wrap(CPYFI_fake_script)()
+coroutine.wrap(HWTO_fake_script)()
+coroutine.wrap(UYHEOX_fake_script)()
+coroutine.wrap(ACISR_fake_script)()
+coroutine.wrap(EMUR_fake_script)()
+coroutine.wrap(DEOI_fake_script)()
+coroutine.wrap(BWGDYS_fake_script)()
+coroutine.wrap(ECWF_fake_script)()
+coroutine.wrap(JKQOAQK_fake_script)()
+coroutine.wrap(LLJYZMF_fake_script)()
+coroutine.wrap(YFFGHK_fake_script)()
+coroutine.wrap(ABGSBM_fake_script)()
+coroutine.wrap(AZTU_fake_script)()
+coroutine.wrap(HMQM_fake_script)()
+coroutine.wrap(WBLVU_fake_script)()
+coroutine.wrap(CFVVAY_fake_script)()
+coroutine.wrap(DCQXD_fake_script)()
+coroutine.wrap(EECBLHA_fake_script)()
+coroutine.wrap(AIQOVFH_fake_script)()
+coroutine.wrap(KCKOPJ_fake_script)()
+coroutine.wrap(OSGM_fake_script)()
+coroutine.wrap(ZJKRY_fake_script)()
+coroutine.wrap(YYBCKHH_fake_script)()
+coroutine.wrap(FSFUVET_fake_script)()
+coroutine.wrap(LSYRU_fake_script)()
+coroutine.wrap(TGVBIHT_fake_script)()
+coroutine.wrap(QUFRGWA_fake_script)()
+coroutine.wrap(TSJYGQ_fake_script)()
+coroutine.wrap(MRVOM_fake_script)()
+coroutine.wrap(AVLJ_fake_script)()
+coroutine.wrap(UCHHAD_fake_script)()
+coroutine.wrap(SVSEJD_fake_script)()
+coroutine.wrap(GWEPQDG_fake_script)()
+coroutine.wrap(NSGCJBN_fake_script)()
+coroutine.wrap(ARHNB_fake_script)()
+coroutine.wrap(YNQTD_fake_script)()
+coroutine.wrap(KCMZM_fake_script)()
+coroutine.wrap(VTPVJY_fake_script)()
+coroutine.wrap(EHEGUGJ_fake_script)()
+coroutine.wrap(DSYVAGX_fake_script)()
+coroutine.wrap(QAXPPZ_fake_script)()
+coroutine.wrap(CVCFO_fake_script)()
+coroutine.wrap(COYZQ_fake_script)()
+coroutine.wrap(SNMAQA_fake_script)()
