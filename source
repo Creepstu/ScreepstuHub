@@ -2271,7 +2271,7 @@ local function HOKIBZG_fake_script() -- Fake Script: Workspace.ScreepstuHub.Main
         return req(obj)
     end
 
-	script.Parent.Text = workspace.Parent .. " - Screepstu Hub"
+	script.Parent.Text = game.Name .. " - Screepstu Hub"
 end
 local function CVYA_fake_script() -- Fake Script: Workspace.ScreepstuHub.MainTop.Close.LocalScript
     local script = Instance.new("LocalScript")
