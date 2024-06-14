@@ -446,7 +446,7 @@ Converted["_Time"].Parent = Converted["_MainTop"]
 Converted["_UIPadding1"].PaddingRight = UDim.new(0, 8)
 Converted["_UIPadding1"].Parent = Converted["_Time"]
 
-Converted["_Icon"].Image = "rbxassetid://6510893737"
+Converted["_Icon"].Image = "rbxassetid://14903988760"
 Converted["_Icon"].Active = false
 Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Icon"].BackgroundTransparency = 0.699999988079071
